@@ -1,0 +1,14 @@
+/*.post-tag:before {
+  content: "\f02b";
+  font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+  padding-right: .5em;
+}*/
+
+.post-head .fas {
+	color: #aaa;
+}
+
+a {
+	color: #28c2b4;
+}

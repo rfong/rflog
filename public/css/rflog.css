@@ -9,6 +9,10 @@
 	color: #aaa;
 }
 
+.sidebar-component {
+	margin: 1rem 0;
+}
+
 a {
 	color: #28c2b4;
 }

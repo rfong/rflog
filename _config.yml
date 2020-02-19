@@ -15,7 +15,7 @@ permalink:        pretty
 
 # Setup
 title:            rflog
-tagline:          "rfong's code blog"
+tagline:          "rfong journals about code & tangents thereof"
 description:      "rfong journals about computer things"
 url:              https://hyde.getpoole.com
 baseurl:          /

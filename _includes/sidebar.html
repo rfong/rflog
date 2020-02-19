@@ -27,10 +27,14 @@
       {% endfor %}
     </nav>
 
-		{% include tags.html %}
-		{% for tag in tags %}
-			<a href="#{{ tag | slugify }}"> {{ tag }} </a>
-		{% endfor %}
+		<div class="sidebar-component">
+			{% include tags.html %}
+
+			<i class="fa fa-tags"></i>
+			{% for tag in tags %}
+				<a href="#{{ tag | slugify }}"> {{ tag }} </a>
+			{% endfor %}
+		</div>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>

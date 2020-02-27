@@ -16,3 +16,11 @@
 a {
 	color: #28c2b4;
 }
+
+.post-listing {
+	margin-bottom: 0.5rem;
+}
+
+.post-listing .post-date {
+	display: inline-block;
+}

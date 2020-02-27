@@ -28,11 +28,9 @@
     </nav>
 
 		<div class="sidebar-component">
-			{% include tags.html %}
-
 			<i class="fa fa-tags"></i>
 			{% for tag in tags %}
-				<a href="#{{ tag | slugify }}"> {{ tag }} </a>
+				<a href="/tag/{{ tag | slugify }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
 			{% endfor %}
 		</div>
 

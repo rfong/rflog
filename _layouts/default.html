@@ -3,6 +3,10 @@
 
   {% include head.html %}
 
+  {% comment %}
+    This collects all the site tags and assigns to `tags`.{% endcomment %}
+  {% include collect_tags.html %}
+
   <body>
 
     {% include sidebar.html %}

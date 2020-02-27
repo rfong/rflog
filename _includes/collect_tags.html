@@ -18,11 +18,11 @@ The following part removes duplicated tags and invalid tags like blank tag.
 {% assign tags = "" %}
 {% for tag in rawtags %}
 	{% if tag != "" %}
-			{% if tags == "" %}
-						{% assign tags = tag | split:'|' %}
-			{% endif %}
-			{% unless tags contains tag %}
-			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-			{% endunless %}
+		{% if tags == "" %}
+		  {% assign tags = tag | split:'|' %}
+		{% endif %}
+		{% unless tags contains tag %}
+		  {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
 	{% endif %}
 {% endfor %}

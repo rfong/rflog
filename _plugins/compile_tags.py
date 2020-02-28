@@ -3,12 +3,13 @@
 '''
 This script generates tag pages for all your post tags for a Jekyll site.
 It is invoked as a side effect of a plugin after post_write.
-Run it from the project root.
+Run it from the project root if testing.
+
+Current convention expected for tag names is r/[-\w\d]+/
 '''
 
 import glob
 import os
-import re
 
 POST_DIR = '_posts/'
 TAG_DIR = 'tag/'
@@ -18,13 +19,12 @@ all_tags = []
 for fname in glob.glob(POST_DIR + '*.md'):
 	with open(fname, 'r') as f:
 		for line in f:
-			line = line.strip().strip('[]')
-			# Find the line where tags are specified.
+			line = line.strip().replace('[', '').replace(']', '')
+			# Find the line where tags are specified and cut tags.
 			if line.startswith('tags: '):
-				# Clean string. All non-alphanumeric characters replaced with '-'.
-				all_tags += [
-					re.sub(r'[^\w\d]', '-', t)[1:]
-					for t in line[len("tags: "):].split(',')]
+				# TODO: To ensure consistency between blog tags and scraped
+				# tag names, we should probably URI encode on both ends.
+				all_tags += [t.strip() for t in line[len("tags: "):].split(',')]
 				break
 all_tags = sorted(list(set(all_tags)))
 

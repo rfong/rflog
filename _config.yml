@@ -18,7 +18,7 @@ title:            rflog
 tagline:          "rfong journals about code & tangents thereof"
 description:      "rfong journals about code & tangents thereof"
 url:              https://rfong.github.io/rflog/
-baseurl:          /
+baseurl:          /rflog
 
 author:
   name:           'rfong'

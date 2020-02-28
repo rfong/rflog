@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My first few days of exploring Clojure
-tags: [clojure, recurse-center]
+tags: [clojure, functional-programming, recurse-center]
 ---
 
 In between many other delightful pursuits, I managed to allocate a few hours each day of my Recurse mini-batch to learning or implementing things in [Clojure](https://clojure.org/).
@@ -38,7 +38,7 @@ Clojure is my first Lisp-like language, so I wanted some philosophy and examples
 
 The Joy of Clojure blew my mind as early as page 12 with an example of how the [order of operations](https://en.wikipedia.org/wiki/Order_of_operations) can be elegantly implemented in a functional lang by assigning operation weights and shifting the evaluation order as needed.
 
-Let's say we want to implement the order of operations for infix operators. Since Clojure uses prefix operators, we first need a couple of functions that handle infix expressions in different directions.
+Let's say we want to implement the order of operations for infix operators. Since Clojure uses prefix operators, we first to be able to handle infix expressions in both directions. The following functions simply translate infix expressions into prefix expressions which can then be evaluated in Clojure.
 {% highlight clojure %}
 ; function that solves infix math expressions right to left
 (defn r->lfix
@@ -78,7 +78,7 @@ Once we have those, we can quickly implement the order of operations.
 
 We only have addition and multiplication in this example, but we can easily add more operators as needed by extending the map.
 
-This feels really elegant compared to implementing an order-of-operations evaluator in a verbose imperative language like Java, where you need to imperatively reconfigure your infix notation expression substring-by-substring into a nested stack of expressions anyways -- with an end result reminiscent of a Lisp-like explicitly nested arithmetic expression!
+This feels really elegant compared to implementing an order-of-operations evaluator in a verbose imperative language like Java, where you need to imperatively reconfigure your infix notation expression substring-by-substring into a nested stack of expressions anyways -- with an end result reminiscent of a Clojure-like explicitly nested arithmetic expression!
 
 ### Clojure philosophy
 
@@ -92,7 +92,7 @@ A nice grammatical analogy: an OOP mindset encourages you to define an applicati
 
 ### Local encapsulation example
 
-Here's another neat code example from Chapter 1, where we look up a chessboard square by rank and file.
+Here's another neat code example from Chapter 1, where we look up a chessboard square by *rank* (rows, labelled 1-8) and *file* (columns, labelled a-h).
 
 {% highlight clojure %}
 (defn lookup3 [board pos]

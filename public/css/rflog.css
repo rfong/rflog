@@ -9,12 +9,24 @@
 	color: #aaa;
 }
 
+.sidebar {
+	background-color: #5b2005;
+	background-image: url("/rflog/public/dark_redwood_texture.jpg");
+	background-repeat: repeat;
+}
+
 .sidebar-component {
 	margin: 1rem 0;
 }
 
+.sidebar h1 {
+	font-weight: normal;
+}
+
 a {
-	color: #28c2b4;
+  color: #2bc17c;
+	/* turquoise
+	color: #28c2b4;*/
 }
 
 .post-listing {

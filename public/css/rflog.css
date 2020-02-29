@@ -36,3 +36,10 @@ a {
 .post-listing .post-date {
 	display: inline-block;
 }
+
+/* embeds */
+
+.embed iframe {
+	width: 400px;
+	max-width: 100%;
+}

@@ -1,0 +1,10 @@
+{% comment %}
+	Usage: {% include embed/spotify_album.html id="3V9Ndh1badVfBXnv3niDgE" %}
+	{% endcomment %}
+<div class="embed-spotify-list embed">
+    <iframe src="https://open.spotify.com/embed/album/{{ include.id }}" 
+        frameborder="0" 
+        allowtransparency="true" 
+        allow="encrypted-media">
+    </iframe>
+</div>

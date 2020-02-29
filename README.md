@@ -24,3 +24,4 @@ Jekyll [hooks](https://jekyllrb.com/docs/plugins/hooks/) are a subtype of [plugi
 - [Implement tags in Jekyll](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/)
 - [Automatic generation of category/tag pages in Jekyll](https://github.com/jekyll/jekyll/issues/6952)
 - [`site.url` vs `site.baseurl`](https://stackoverflow.com/a/27400343/1006596)
+- [Spotify embeds](https://thisisa.blog/how-to-embed-media-github-pages)

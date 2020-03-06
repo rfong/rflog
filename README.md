@@ -1,6 +1,6 @@
 This is my mostly-code blog! It runs on [Jekyll](https://jekyllrb.com/) and is forked from the [Hyde theme](https://github.com/poole/hyde).
 
-### Run server
+## Run server
 
 Is Ruby working? If not:
 ```
@@ -12,6 +12,8 @@ Serve:
 ```
 bundle exec jekyll serve
 ```
+
+## Implementation notes to self
 
 ### Tag pages
 
@@ -25,3 +27,7 @@ Jekyll [hooks](https://jekyllrb.com/docs/plugins/hooks/) are a subtype of [plugi
 - [Automatic generation of category/tag pages in Jekyll](https://github.com/jekyll/jekyll/issues/6952)
 - [`site.url` vs `site.baseurl`](https://stackoverflow.com/a/27400343/1006596)
 - [Spotify embeds](https://thisisa.blog/how-to-embed-media-github-pages)
+
+## TODO
+
+- [ ] blog comments

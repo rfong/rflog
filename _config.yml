@@ -15,13 +15,13 @@ permalink:        pretty
 
 # Setup
 title:            rflog
-tagline:          "rfong journals about code & tangents thereof"
-description:      "rfong journals about code & tangents thereof"
+tagline:          "rfong's computerish journalings"
+description:      "computerish journalings"
 url:              https://rfong.github.io/rflog/
 baseurl:          /rflog
 
 author:
-  name:           'rfong'
+  name:           'rf'
   url:            https://rfong.github.io
 
 paginate:         3

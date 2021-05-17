@@ -224,6 +224,8 @@ for tag in all_tags:
     f.write(TAG_PAGE_TEMPLATE.format(tag=tag))
 {% endhighlight %}
 
+(Also in Gist form [here](https://gist.github.com/rfong/9e7a9e99a1295deaa58f81548eaf66d6).)
+
 That's all! Restart your Jekyll server to make sure you're using the new plugin, and you should see specs for tag pages generated into the `tag/` directory, which you can then link to in your post layouts as `{%raw%}{{site.baseurl}}/tag/{{tag}}{%endraw%}`.
 
 Enjoy blogging :)
@@ -234,11 +236,11 @@ Enjoy blogging :)
 
 ### Not all URLs work
 
-If your blog is serving from somewhere other than your domain root, e.g. serving from `https://me.github.io/blog/` rather than `https://me.github.io/`, double check that your theme uses its `site.baseurl` as expected. (`site.baseurl` is used to indicate the root folder of the Jekyll site. Confusingly, there is also a `site.url`; [here's](https://stackoverflow.com/a/27400343/1006596) a great StackOverflow explanation.)
+If your blog is serving from somewhere other than your domain root, e.g. serving from `https://me.github.io/blog/` rather than `https://me.github.io/`, double check that your theme uses its `site.baseurl` as expected. (`site.baseurl` is used to indicate the root folder of the Jekyll site. Confusingly named, there is also a `site.url` used to indicate your root domain; [here's](https://stackoverflow.com/a/27400343/1006596) a great StackOverflow explanation, and here's [a good blog post](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/) on it.)
 
 For this blog, I have the following set in my `_config.yml`.
 ```
-url:              https://rfong.github.io/rflog/
+url:              https://rfong.github.io
 baseurl:          /rflog
 ```
 
@@ -257,4 +259,4 @@ For a manually written URL, you'll want to include the slash.
 {{ site.baseurl }}/tag/{{ tag | slugify }}
 {%endraw%}```
 
-I couldn't find whether Liquid had a readily available `os.path.join` equivalent.
+I couldn't find whether Liquid had a readily available `os.path.join` equivalent, but you can just concat by smashing Liquid tags next to each other.

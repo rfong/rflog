@@ -30,4 +30,6 @@ Jekyll [hooks](https://jekyllrb.com/docs/plugins/hooks/) are a subtype of [plugi
 
 ## TODO
 
-- [ ] blog comments
+- [ ] per-page comments
+- [ ] per-page likes
+- [ ] basic analytics

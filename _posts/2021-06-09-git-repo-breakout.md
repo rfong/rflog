@@ -6,7 +6,23 @@ tags: [git, refactor, hot-tips, tutorial]
 
 I've been sporadically doing some [creative coding](https://rfong.github.io/creative-coding-p5) in a [sandbox repo](https://github.com/rfong/rc-sandbox) I made to play in during my time at Recurse Center. It's starting to become a real mishmash of languages. I just added some dependencies and a simple build system to my creative coding subdirectory, so it was about time to split that bad boy out into its own repo. But I was loath to lose my valuable commit history in the process.
 
-[This blog post](http://tuxdiary.com/2015/08/13/move-subdir-new-git-repo-preserve-history/) gave me the tricky git command to filter your source and history down to a subdirectory, but overall my approach ended up taking a lot fewer steps than theirs. Here's what I did.
+[This blog post](http://tuxdiary.com/2015/08/13/move-subdir-new-git-repo-preserve-history/) tipped me off to the tricky `git filter-branch` command to filter your source and history down to a subdirectory, but overall my approach ended up taking a lot fewer steps than theirs.
+
+## Warning: `filter-branch` vs. `filter-repo`
+
+`[git filter-branch](https://git-scm.com/docs/git-filter-branch#_warning)` warning:
+> `git filter-branch` has a plethora of pitfalls that can produce non-obvious manglings of the intended history rewrite (and can leave you with little time to investigate such problems since it has such abysmal performance).
+
+The safer approach is [`git filter-repo`](https://github.com/newren/git-filter-repo/). Thanks very much to [Coby](https://github.com/acobster) for pointing this out to me!
+
+`git filter-branch` comes built in to `git`, but note that `git filter-repo` requires some minimal setup to suit your `bin` preferences. I cloned it and then symlinked the executable.
+```
+git clone https://github.com/newren/git-filter-repo.git
+cd git-filter-repo
+`ln -s `pwd`/git-filter-repo` /usr/local/bin/git-filter-repo
+```
+
+## Approach
 
 Let's say your original repo has this structure.
 ```
@@ -31,11 +47,11 @@ git clone <repo1_git_URL> repo2
 cd repo2
 ```
 
-3. The following git incantation removes all git content that is not relevant to `targetdir`, and brings `targetdir`'s contents up to the root.
+3. The following incantation removes all git content that is not relevant to `targetdir`, and brings `targetdir`'s contents up to the root.
 ```
-git filter-branch --subdirectory-filter targetdir -- --all
+git filter-repo --subdirectory-filter targetdir
 ```
-(Note that this also works if `targetdir` is nested, e.g. `dirA/dirB/targetdir`.)
+(Note that this still works if your target dir is nested, e.g. `dirA/dirB/targetdir`.)
 
 4. Double check that your desired log is intact and things are as expected!
 ```

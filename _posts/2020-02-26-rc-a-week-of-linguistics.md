@@ -1,6 +1,6 @@
 ---
 layout: post
-title: In which Recurse turns into Linguistics Week
+title: A summary of Linguistics Week (a.k.a. Recurse Center)
 tags: [recurse-center, linguistics]
 ---
 

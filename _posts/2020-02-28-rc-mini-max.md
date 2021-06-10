@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RC Minimax - Getting the most out of a Recurse Center mini-batch
-tags: [recurse-center]
+tags: [recurse-center, hot-tips]
 ---
 
 How does one actualize years of pent-up anticipation into a single week of [Recurse Center](https://www.recurse.com/)?

@@ -10,7 +10,7 @@ I've been sporadically doing some [creative coding](https://rfong.github.io/crea
 
 ## Warning: `filter-branch` vs. `filter-repo`
 
-`[git filter-branch](https://git-scm.com/docs/git-filter-branch#_warning)` warning:
+[`git filter-branch`](https://git-scm.com/docs/git-filter-branch#_warning) warning:
 > `git filter-branch` has a plethora of pitfalls that can produce non-obvious manglings of the intended history rewrite (and can leave you with little time to investigate such problems since it has such abysmal performance).
 
 The safer approach is [`git filter-repo`](https://github.com/newren/git-filter-repo/). Thanks very much to [Coby](https://github.com/acobster) for pointing this out to me!

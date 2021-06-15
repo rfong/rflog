@@ -71,7 +71,7 @@ Even when I do want to make a web utility with per-user storage and configurabil
 - [Replacerator](https://chrome.google.com/webstore/detail/replacerator/gaajhenbcclienfnniphiiambbbninnp) is a generalized, completely user-configurable text replacement tool I made after I got tired of forking Cloud-To-Butt.
 - [Snailman](https://chrome.google.com/webstore/detail/snailman/gnncgbnoacieamgkmommabmpchlfidca?hl=en) is a physical package-tracking extension I made when I had a bunch of exciting packages in the mail for a project.
 
-I value local-first storage quite a lot -- not just for privacy reasons but largely for convenience, reliability, performance, and freedom from constantly being tethered to a network while doing mundane things that aren't functionally predicated on having a network connection.
+I value [local-first storage](https://www.inkandswitch.com/local-first.html) quite a lot -- not just for privacy reasons but largely for convenience, reliability, performance, and freedom from constantly being tethered to a network while doing mundane things that aren't functionally predicated on having a network connection.
 
 ## Plain HTML
 

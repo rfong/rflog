@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ultralight / performant web development
+title: Ultralight / performant static web development
 tags: [web, lightweight, jekyll, shaders]
 ---
 

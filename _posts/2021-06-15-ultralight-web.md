@@ -76,7 +76,7 @@ Similarly, I have avoided countless heavyweight frontend frameworks for personal
 Even when I do want to make a web utility with per-user storage and configurability, I frequently fake out by just writing an extension that uses [local storage](https://developer.chrome.com/docs/extensions/reference/storage/).
 
 - [Replacerator](https://chrome.google.com/webstore/detail/replacerator/gaajhenbcclienfnniphiiambbbninnp) is a generalized, completely user-configurable text replacement tool I made after I got tired of forking Cloud-To-Butt.
-- [Snailman](https://chrome.google.com/webstore/detail/snailman/gnncgbnoacieamgkmommabmpchlfidca?hl=en) is a physical package-tracking extension I made when I had a bunch of packages in the mailat one point. Great for gifting and eBaying.
+- [Snailman](https://chrome.google.com/webstore/detail/snailman/gnncgbnoacieamgkmommabmpchlfidca?hl=en) is a physical package-tracking extension I made when I had a bunch of packages in the mail at one point. Great for gifting and eBaying.
 
 I value [local-first storage](https://www.inkandswitch.com/local-first.html) quite a lot -- not just for privacy reasons but largely for convenience, reliability, performance, and freedom from constantly being tethered to a network while doing mundane things that aren't functionally predicated on having a network connection.
 

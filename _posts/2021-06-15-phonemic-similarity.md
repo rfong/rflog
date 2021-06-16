@@ -100,7 +100,7 @@ We also don't have a dataset for phonotactics -- the complex rules that govern h
 
 In terms of code, I just used vanilla Python out of habit & familiarity; `pandas` might be a better fit for querying next time.
 
-Despite my strong enthusiasm for linguistics, I'm pretty novice at it, so please feel free to send me corrections if I said anything inaccurate!
+Despite my strong enthusiasm for linguistics, I'm pretty novice at it, so please feel free to [send me corrections](https://github.com/rfong/rflog/issues) if I said anything inaccurate!
 
 Although the original questions I had weren't a great fit for the data and didn't do it justice, this is a wonderfully structured dataset and I'm excited to use it more in the future.
 

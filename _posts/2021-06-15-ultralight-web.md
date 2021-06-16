@@ -59,7 +59,7 @@ My portfolio website (whose content and methodology are both extremely outdated)
 
 ## Jekyll
 
-[Jekyll](https://jekyllrb.com/) is a blog-aware static website generator. I'm using it for this blog! [Here's a post](http://localhost:4000/rflog/2020/02/28/jekyll-tags/) about my setup. It's quite fast and I've experienced very few issues between development and deployment.
+[Jekyll](https://jekyllrb.com/) is a blog-aware static website generator. I'm using it for this blog! <a href="{{site.baseurl}}{% post_url 2020-02-28-jekyll-tags %}">Here's a post</a> about my setup. It's quite fast and I've experienced very few issues between development and deployment.
 
 Being able to write to this blog in plain [Markdown](https://daringfireball.net/projects/markdown/) with native Github Pages support is an incredible boon and I love Github for baking that in.
 

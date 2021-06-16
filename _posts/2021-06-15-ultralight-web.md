@@ -47,7 +47,7 @@ I've been trying out a lighter-weight frontend build tool called [`snowpack`](ht
 
 I like it so far! It definitely has limitations, but it's really perfect for developing quickly when you don't need anything fancy.
 
-# Classics
+# Minimalist classics
 
 Here are some other minimal static web dev approaches I've been using for a while.
 

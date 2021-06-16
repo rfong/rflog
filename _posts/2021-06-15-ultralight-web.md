@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Ultralight and performant web development
+title: Ultralight / performant web development
 tags: [web, lightweight, jekyll, shaders]
 ---
 
-My intense personal avoidance of laggy, heavyweight stacks is well known, especially as I have rampant focus issues when waiting for pages in development to reload. In particular, I don't enjoy modern industrial web build systems, although I frequently tolerate them for job purposes.
+My intense personal avoidance of laggy, heavyweight stacks is well voiced, especially since I have rampant focus issues when waiting for pages in development to reload. In particular, I often become sad in the presence of modern industrial web build systems, although I frequently tolerate them for job purposes.
 
 Recently, I have been casually playing around with a couple of higher-performance web technologies evoking old-timey statically typed systems of yore. These may have significantly higher upfront frustration, but the runtime performance, compile-time errors, and consolidated logic just make me feel happy and nostalgic inside for some reason. Plus, it's fun to explore.
 
@@ -36,7 +36,13 @@ Fragment shaders are mind-bending, powerful, and unbelievably frustrating to deb
 
 ## snowpack
 
-`webpack`, one of the most common frontend build tools, is powerful, but also large and frequently slow. I've been trying out a lighter-weight frontend build tool called [`snowpack`](https://www.snowpack.dev/) for tiny experimental repos where I want ES6 compatibility, clean module imports/exports, and bundling, but not with all the overhead of `webpack`.
+`webpack`, one of the most common frontend build tools, is incredibly powerful. But with great power comes great complexity. I once had a job where the `webpack` build was so slow that I had time to hand-letter entire salty postcards in between waiting for it to rebuild.
+
+<img alt="Postcards about compiling. React: Does less so you can do more. Miss compiling? Try Docker! Hate compiling? Try hand-crafted Assembly! (Assembler required.)" src="{{site.baseurl}}/assets/images/2021-06-15-compiling-postcards.png"/>
+
+<p class="caption"><a href="https://www.zazzle.com/store/thetechnocrat">print shop here</a>. I actually love <a href="https://docker.com/">Docker</a> a lot, even though I'm kind of making fun of it here.</p>
+
+I've been trying out a lighter-weight frontend build tool called [`snowpack`](https://www.snowpack.dev/) for tiny experimental repos where I want ES6 compatibility, clean module imports/exports, and bundling, but not with all the overhead of `webpack`.
 
 I like it so far! It definitely has limitations, but it's really perfect for developing quickly when you don't need anything fancy.
 

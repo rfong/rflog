@@ -23,10 +23,10 @@ A bit tempted to try RustWASM's very thorough tutorial on how to make [Conway's 
 
 ## GLSL fragment shaders
 
-I started out doing a lot of my weekly creative-coding experiments in [`p5`](https://p5js.org/), which has absolutely wonderful documentation and lots of features. However, I got frustrated pretty quickly with the extremely slow performance I was experiencing in development, so I redid [last week's](https://rfong.github.io/creative-coding/skymap/dist/p5.html) `p5` experiment as a GLSL fragment shader [here](https://rfong.github.io/creative-coding/skymap).
+This is a way to make GPU-accelerated graphics that look extremely dope, can be encoded very compactly, and are interpretable by (most) browsers.
 
 - A *[fragment shader](https://www.khronos.org/opengl/wiki/Fragment_Shader)* is the part of a GL pipeline that colors the per-vertex output. (Earlier stages in the pipeline include [vertex shaders](https://www.khronos.org/opengl/wiki/Vertex_Shader), which map vertex positions, and [geometry shaders](https://www.khronos.org/opengl/wiki/Geometry_Shader), which output primitives.)
-- *[GLSL](https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language)*, or OpenGL Shading Language, is the principal language for OpenGL.
+- *[GLSL](https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language)*, or OpenGL Shading Language, is the principal language for OpenGL, which is probably the most widely-used cross-language cross-platform graphics rendering API around.
 - *[WebGL](https://en.wikipedia.org/wiki/WebGL)* is a Javascript API for GPU-accelerated graphics & physics processing in the browser, and understands GLSL. Most major browsers have supported WebGL for several years.
 
 For examples of the complex renders that can be instructed on obscenely small amounts of GLSL code, check out [ShaderToy](https://www.shadertoy.com), especially [this beautiful 200-line animated seascape](https://www.shadertoy.com/view/Ms2SD1).
@@ -34,6 +34,8 @@ For examples of the complex renders that can be instructed on obscenely small am
 Fragment shaders are mind-bending, powerful, and unbelievably frustrating to debug. Their typical inputs are pixel location and time, which feels a bit like a closure. However, they're also very low-level, so the code is extremely imperative. Every time I practice using them, I feel like my brain is a dry, crusty old rubber band getting stretched painfully over a watermelon. But in a good way?
 
 [The Book of Shaders](https://thebookofshaders.com/) is the best interactive/explorable tutorial I've seen on conceptually understanding how fragment shaders work and how to think in their paradigm.
+
+I started out doing a lot of my weekly creative-coding experiments in [`p5`](https://p5js.org/), which has absolutely wonderful documentation and lots of features. However, I got frustrated pretty quickly with the extremely slow performance I was experiencing in development, so I redid [last week's](https://rfong.github.io/creative-coding/skymap/dist/p5.html) `p5` experiment as a GLSL fragment shader [here](https://rfong.github.io/creative-coding/skymap).
 
 ## snowpack
 
@@ -64,6 +66,8 @@ My portfolio website (whose content and methodology are both extremely outdated)
 Being able to write to this blog in plain [Markdown](https://daringfireball.net/projects/markdown/) with native Github Pages support is an incredible boon and I love Github for baking that in.
 
 ## Google Sheets as a read-only database
+
+My favorite free hosted read-only database with RTC editing and configurable formatting in-view. Possibly the only one. How can you beat that?
 
 If I had to count how many statically served websites I own that use [Google Sheets](https://sheets.google.com/)' ability to serve CSV output as their read-only database, it would be embarrassing, except it wouldn't because I love it. It has saved me so much time avoiding microservices or servers when I want to throw tiny websites on the Internet. Thanks, Big G.
 

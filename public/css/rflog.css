@@ -43,3 +43,11 @@ a {
 	width: 400px;
 	max-width: 100%;
 }
+
+/* Manual HTML usage outside Markdown */
+
+.caption {
+	text-align: center;
+	font-style: oblique;
+	font-size: 16px;
+}

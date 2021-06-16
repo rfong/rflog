@@ -93,7 +93,7 @@ Even if a language shares an extremely large set of phonemes with American Engli
 
 So, given a dataset of phonemes weighted by frequency of use in the language, we might be able to better calculate an intuition-aligned dis/similarity index.
 
-We also don't have a dataset for phonotactics -- the complex rules that govern how phonemes are strung together. As one example of when this might obfuscate perceptual dis/similaity, "ng" `[ŋ]` is incredibly common in American English at the *ends* of syllables ("thi**ng**", "runni**ng**", etc.), but is never used to *begin* a syllable, so Americans often perceive syllable-onset `[ŋ]` (which is super common in Southeast Asian languages) as weird.
+We also don't have a dataset for phonotactics -- the complex rules that govern how phonemes are strung together. As one example of when this might obfuscate perceptual dis/similarity, "ng" `[ŋ]` is incredibly common in American English at the *ends* of syllables ("thi**ng**", "runni**ng**", etc.), but is never used to *begin* a syllable, so Americans often perceive syllable-onset `[ŋ]` (which is super common in Southeast Asian languages) as weird.
 
 
 ## Closing remarks

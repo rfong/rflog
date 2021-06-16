@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Ultralight / performant static web development
-tags: [web, lightweight, jekyll, shaders]
+title: Ultralight / performant static web dev explorations
+tags: [web, lightweight, jekyll, shaders, exploration]
+date: 2021-06-15 16:00:00
 ---
 
-My intense personal avoidance of laggy, heavyweight stacks is well voiced, especially since I have rampant focus issues when waiting for pages in development to reload. In particular, I often become sad in the presence of modern industrial web build systems, although I frequently tolerate them for job purposes.
+My intense personal avoidance of laggy, heavyweight stacks is well voiced, especially since I have rampant focus issues when waiting for pages in development to reload. In particular, I often become sad in the presence of modern industrial frontend build systems that are slow even on local dev when very little code has been touched, although I frequently tolerate them for job purposes.
 
 Recently, I have been casually playing around with a couple of higher-performance web technologies evoking old-timey statically typed systems of yore. These may have significantly higher upfront frustration, but the runtime performance, compile-time errors, and consolidated logic just make me feel happy and nostalgic inside for some reason. Plus, it's fun to explore.
 
@@ -48,17 +49,17 @@ I like it so far! It definitely has limitations, but it's really perfect for dev
 
 # Classics
 
-Here are some other approaches to minimal web stacks I've been using for a while.
+Here are some other minimal static web dev approaches I've been using for a while.
 
 ## Jinja
 
 I love simple static compilation of websites, particularly the [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) templating framework for Python! It's a nice ultralight way to templatize websites and make your development process more readable without incurring much overhead.
 
-My portfolio website (whose content is extremely outdated) is compiled with [about 20 lines](https://github.com/rfong/rfong.github.io/blob/master/compile.py) of Python/Jinja.
+My portfolio website (whose content and methodology are both extremely outdated) is compiled with [about 20 lines](https://github.com/rfong/rfong.github.io/blob/master/compile.py) of Python/Jinja combined with 170 lines of Angular directives & templates.
 
 ## Jekyll
 
-[Jekyll](https://jekyllrb.com/) is a blog-aware static website generator. I'm using it for this blog! [Here's a post](http://localhost:4000/rflog/2020/02/28/jekyll-tags/) about my setup. It's very fast and I've experienced very few issues between development and deployment.
+[Jekyll](https://jekyllrb.com/) is a blog-aware static website generator. I'm using it for this blog! [Here's a post](http://localhost:4000/rflog/2020/02/28/jekyll-tags/) about my setup. It's quite fast and I've experienced very few issues between development and deployment.
 
 Being able to write to this blog in plain [Markdown](https://daringfireball.net/projects/markdown/) with native Github Pages support is an incredible boon and I love Github for baking that in.
 
@@ -68,14 +69,14 @@ If I had to count how many statically served websites I own that use [Google She
 
 ## JSON as static CMS storage
 
-Similarly, I have avoided countless heavyweight frontend frameworks for personal websites by writing ultra lightweight templates and [populating](https://github.com/ptsd-resources/ptsd-resources.github.io/blob/master/assets/index.js) them with the contents of JSON files. All of [innerdemons.me](https://innerdemons.me/) is templatized this way. I know it's not modern but I love the simplicity.
+Similarly, I have avoided countless heavyweight frontend frameworks for personal websites by writing ultra lightweight templates and [populating](https://github.com/ptsd-resources/ptsd-resources.github.io/blob/master/assets/index.js) them with the contents of JSON files. All the content on [innerdemons.me](https://innerdemons.me/) and most of the content on my portfolio site is injected this way. I know it's obstinately immodern but I love the simplicity.
 
 ## Browser extension local storage
 
 Even when I do want to make a web utility with per-user storage and configurability, I frequently fake out by just writing an extension that uses [local storage](https://developer.chrome.com/docs/extensions/reference/storage/).
 
 - [Replacerator](https://chrome.google.com/webstore/detail/replacerator/gaajhenbcclienfnniphiiambbbninnp) is a generalized, completely user-configurable text replacement tool I made after I got tired of forking Cloud-To-Butt.
-- [Snailman](https://chrome.google.com/webstore/detail/snailman/gnncgbnoacieamgkmommabmpchlfidca?hl=en) is a physical package-tracking extension I made when I had a bunch of exciting packages in the mail for a project.
+- [Snailman](https://chrome.google.com/webstore/detail/snailman/gnncgbnoacieamgkmommabmpchlfidca?hl=en) is a physical package-tracking extension I made when I had a bunch of packages in the mailat one point. Great for gifting and eBaying.
 
 I value [local-first storage](https://www.inkandswitch.com/local-first.html) quite a lot -- not just for privacy reasons but largely for convenience, reliability, performance, and freedom from constantly being tethered to a network while doing mundane things that aren't functionally predicated on having a network connection.
 

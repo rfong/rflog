@@ -28,6 +28,8 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .idea
+.jekyll-cache
+Gemfile.lock
 
 # Komodo
 *.komodoproject

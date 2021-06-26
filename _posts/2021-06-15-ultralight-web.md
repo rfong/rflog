@@ -41,7 +41,7 @@ I started out doing a lot of my weekly creative-coding experiments in [`p5`](htt
 
 `webpack`, one of the most common frontend build tools, is incredibly powerful. But with great power comes great complexity. I once had a job where the `webpack` build was so slow that I had time to hand-letter entire salty postcards in between waiting for it to rebuild.
 
-<img alt="Postcards about compiling. React: Does less so you can do more. Miss compiling? Try Docker! Hate compiling? Try hand-crafted Assembly! (Assembler required.)" src="{{site.baseurl}}/assets/images/2021-06-15-compiling-postcards.png"/>
+<a href="https://www.zazzle.com/store/thetechnocrat"><img alt="Postcards about compiling. React: Does less so you can do more. Miss compiling? Try Docker! Hate compiling? Try hand-crafted Assembly! (Assembler required.)" src="{{site.baseurl}}/assets/images/2021-06-15-compiling-postcards.png"/></a>
 
 <p class="caption"><a href="https://www.zazzle.com/store/thetechnocrat">print shop here</a>. I actually love <a href="https://docker.com/">Docker</a> a lot, even though I'm kind of making fun of it here.</p>
 

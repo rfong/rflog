@@ -28,6 +28,10 @@ This will vary by person, but personally, my prerequisites for having executive 
 
 <a href="https://poorlydrawnstore.com/products/dont-forget-print"><img alt="Don't forget: Drink water. Get sunlight. You're basically a houseplant with more complicated emotions. by poorlydrawnlines.com" src="{{site.baseurl}}/assets/images/2021-06-25-houseplant-emotions.png" /></a>
 
+Sleep hygiene is another really important one for many people! [f.lux](https://justgetflux.com/) goes a really long way in filtering blue light out of your displays after the sun goes down so that your body isn't artificially scammed out of getting sleepy.
+
+Distractibility Accountabilibbudies seem to vary on their sleep hygiene needs otherwise, though. Some benefit from white noise machines, some don't. Some need to have sunlight gradually cranked up onto their face in the morning, and some desire perfect darkness until the moment they awaken.
+
 What are your top 2-3 needs to keep your body happy?
 
 ## Channeling your focus
@@ -52,7 +56,7 @@ In addition to an end-of-day routine, we also both do an end-of-week routine whe
 
 Lots of Recursers enjoy completely unplugging from our devices and going to nature to reset our brains!
 
-If you're not very excited about going outside, find ways to enjoy learning more about nature and getting engaged with the details of the world around you. Here are some helpful apps for [plant literacy](https://www.inaturalist.org/), [bird identfication](https://merlin.allaboutbirds.org/), and [running every street in your city](https://citystrides.com/). Also google "self-guided walking tours" in your area.
+If you're not as excited about going outside as you'd like to be, it can be helpful to get a dog or pick up an interest such as [plant literacy](https://www.inaturalist.org/), [birding](https://merlin.allaboutbirds.org/), or [running every street in your city](https://citystrides.com/). Also google "self-guided walking tours" in your area.
 
 Hannah's trick for getting up more often: spread out laundry and other chores during the day. If you're ambitious, get a very thirsty plant such as a hydrangea, and water it during the day. Growing herbs and vegetables from seed is another way to get up often.
 
@@ -76,4 +80,6 @@ Staying on track is hard and really takes a lot of foundational work and habit-b
 
 The [Momentum habit-tracker app](https://apps.apple.com/us/app/momentum-habit-tracker-routines-goals-rituals/id946923599) talks about the importance of *keystone habits* -- simple habits that help all the rest of your good habits fall into place.
 
-For me that's breakfast and always having something palatable to switch to if I zone out. I wrote down my "backup" projects on an index card on my desk, so hopefully that'll be helpful.
+For me that's breakfast and always having something palatable to switch to if I zone out. I wrote down my "backup" projects on an index card on my desk so I can always see it.
+
+Best of luck in your distraction-curbing adventures!

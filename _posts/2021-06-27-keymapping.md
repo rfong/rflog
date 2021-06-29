@@ -16,7 +16,9 @@ I wanted to do what would have felt completely impractical before using a `crkbd
 
 ### High-level layout thoughts
 
-For better or worse, I'm sticking with QWERTY for now. Personally, it doesn't bother me; most of my ergonomics complaints are around the positions of modifiers and special functions. So I don't feel a particular need to switch my alpha layout.
+For better or worse, I'm sticking with QWERTY for now. Personally, it doesn't bother me; most of my ergonomics complaints are around the positions of modifiers and special functions. So I don't feel a particular need to switch my alpha layout just yet.
+
+<img alt="screenshot of keymap layers" src="{{site.baseurl}}/assets/images/2021-06-27-layout-0.png" />
 
 [`miryoku`](https://github.com/manna-harbour/miryoku) is one of the most popular 5x3 + 3 keeb layouts, and its creator, `manna-harbour`, was actually the clincher for me deciding to buy a `crkbd` because they [hotswapped a Lenovo trackpoint](https://github.com/manna-harbour/crkbd/tree/master/trackpoint) into theirs, which is my dream setup.
 
@@ -62,7 +64,7 @@ The most confusing change to rebake my muscle memory around was `Shift`, since I
 
 ## One-hand vs. two-hand chords
 
-I did a lot of tweaking based around chord handedness.
+I did a lot of tweaking based around chord handedness on the non-base layers.
 
 <img alt="screenshot of keymap layers" src="{{site.baseurl}}/assets/images/2021-06-27-layout-1.png" />
 <img alt="screenshot of keymap layers" src="{{site.baseurl}}/assets/images/2021-06-27-layout-2.png" />

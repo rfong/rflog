@@ -4,6 +4,7 @@ highlighter:      rouge
 plugins:
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-feed
 gems:
   - jekyll-gist
 gist:
@@ -21,7 +22,7 @@ url:              https://rfong.github.io
 baseurl:          /rflog
 
 author:
-  name:           'rf'
+  name:           'rfong'
   url:            https://rfong.github.io
 
 paginate:         3

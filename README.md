@@ -33,3 +33,5 @@ Jekyll [hooks](https://jekyllrb.com/docs/plugins/hooks/) are a subtype of [plugi
 - [ ] per-page comments
 - [ ] per-page likes
 - [ ] basic analytics
+- [x] RSS feed
+- [ ] meta info/img for embeds

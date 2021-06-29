@@ -11,3 +11,5 @@ gem "jekyll", "~> 4.0"
 gem "jekyll-paginate", "~> 1.1"
 
 gem "jekyll-gist", "~> 1.5"
+
+gem "jekyll-feed" 

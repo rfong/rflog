@@ -26,15 +26,9 @@ Recurse sounded like a technical environment I've been seeking to recapture sinc
 
 While acknowledging that the freedom of having time to make things not for money is a financial privilege, it is an incredibly fulfilling opportunity, enhanced by the synchronicity that other Recursers have rearranged their lives so that you can all embark into this environment together.
 
-## It felt extremely welcoming
+## It felt actively welcoming
 
-### This is a rare phenomenon.
-
-Although I usually have a great time in online chatrooms where no one can see my face, I often feel on guard whenever I physically enter an unfamiliar technically-focused space, such as a conference or interview (depending on the environment, sometimes even when *I'm* the interviewer).
-
-I am an [AFAB](https://nonbinary.wiki/wiki/Sexes#Assigned_female_at_birth), non-white person of extremely short stature. I frequently receive [appearance-based assumptions](https://en.wikipedia.org/wiki/Microaggression) during first meetings in such spaces; usually: explicitly voiced assumptions that I have just started in this field (I've been doing software jobs since 2007), am still in school, or am in a nontechnical or less-technical role. The cognitive dissonance can run deep: I have had an entire conversational exchange with a machinist where he literally believed he was talking to my white cis-male friend next to me even though he was hearing and responding to my voice, and then was surprised when he realized my mouth was making the words. Once when I tried to recruit someone at a job fair, he relentlessly assumed for a surprisingly long time despite clear evidence to the contrary that I was a token nontechnical recruiter and the cis-male PM next to me was the engineer, until the PM got uncomfortable and corrected him (thanks, buddy). I did not follow up.
-
-When I'm on guard, I may respond defensively in ways I'm not proud of. This kind of environment is largely defused at RC in a bunch of tangible ways that helped the space feel welcoming.
+Although I am usually pretty comfortable in online spaces with no faces or names, this is a rare phenomenon for physical spaces in my experience as a person belonging to a few visible demographics which are frequently marginalized based on appearance in the U.S.
 
 ### Diversity
 

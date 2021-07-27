@@ -43,7 +43,7 @@ I spent a few hours fiddling with my package manager, which feels like an awful 
 
 In the process of (2), I got sidetracked by many unexpected wonders (linguistics, theorem proving, feeling in solidarity while bemoaning the "but where are you *from* from" question) and expected distractions (talking about interesting past projects with people, fiddling with synthesizers, eating tasty food). I also enjoyed unexpected horrors during RC, such as nuking and resetting my entire package manager. Overall, it was an excellent and valuable meander through a welcome and inspiring space.
 
-[Longer retrospective here.]({{site.baseurl}}{% post_url 2020-02-28-rc-recap %})
+[Longer retrospective here.]({{site.baseurl}}{% post_url 2020-02-28-cultural-recap %})
 
 
 ## Publicly available

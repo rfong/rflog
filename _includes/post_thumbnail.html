@@ -1,0 +1,10 @@
+<!-- todo: flexbox -->
+<div class="post-thumbnail">
+	<a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+	<i class="post-date">({{post.date | date_to_string}})</i>
+  {% if post.imgurl != null %}
+    <img class="post-image" src="{{site.baseurl}}/assets/images/{{post.imgurl}}" />
+  {% endif %}
+	<div class="post-description">
+		{{post.description}}</div>
+</div>

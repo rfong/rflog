@@ -41,6 +41,18 @@ a {
 	display: inline-block;
 }
 
+.post-thumbnail {
+  margin-bottom: 1rem;
+}
+
+.post-thumbnail .post-description {
+  color: #9a9a9a;
+}
+
+.post-thumbnail .post-image {
+  margin: 0.5rem 0;
+}
+
 /* embeds */
 
 .embed iframe {

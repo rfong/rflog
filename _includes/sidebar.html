@@ -27,13 +27,6 @@
       {% endfor %}
     </nav>
 
-		<div class="sidebar-component">
-			<i class="fa fa-tags"></i>
-			{% for tag in tags %}
-				<a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-			{% endfor %}
-		</div>
-
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>

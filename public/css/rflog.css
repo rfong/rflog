@@ -42,7 +42,11 @@ a {
 }
 
 .post-thumbnail {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.post-thumbnail .post-date {
+  margin-bottom: 0.5rem;
 }
 
 .post-thumbnail .post-description {
@@ -50,7 +54,7 @@ a {
 }
 
 .post-thumbnail .post-image {
-  margin: 0.5rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 /* embeds */

@@ -3,13 +3,18 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<div class="bootstrap-wrapper">
+<div class="container">
+
+<div class="posts row">
   {% for post in paginator.posts %}
+    <div class="col col-12 col-xl-4">
 	  {% include post_thumbnail.html post=post %}
+    </div>
   {% endfor %}
 </div>
 
-<div class="pagination">
+<div class="pagination row">
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
       <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
@@ -25,4 +30,7 @@ title: Home
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
+</div>
+
+</div>
 </div>

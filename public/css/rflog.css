@@ -15,7 +15,9 @@
 	background-repeat: repeat;
 }
 
-.sidebar, .sidebar h1, .page-title, .post-title, .post-date, .post-tags, .tags {
+.sidebar, .sidebar h1,
+.page-title, .post-title, .post-date, .post-tags, .tags,
+.pagination-item {
   font-family: Menlo, Monaco, 'Courier', monospace !important;
 }
 
@@ -43,6 +45,8 @@ a {
 
 .post-thumbnail {
   margin-bottom: 3rem;
+  padding-top: 0.5rem;
+  border-top: 6px dashed #ccc;
 }
 
 .post-thumbnail .post-date {

@@ -47,10 +47,12 @@ a {
 
 .post-thumbnail .post-date {
   margin-bottom: 0.5rem;
+  font-size: 0.75rem;
 }
 
 .post-thumbnail .post-description {
   color: #9a9a9a;
+  font-size: 0.9rem;
 }
 
 .post-thumbnail .post-image {

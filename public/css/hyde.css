@@ -36,11 +36,6 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
-  }
-}
-@media (min-width: 58em) {
-  html {
     font-size: 20px;
   }
 }
@@ -134,14 +129,6 @@ a.sidebar-nav-item:focus {
   }
 }
 
-@media (min-width: 64em) {
-  .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
-  }
-}
-
-
 /*
  * Reverse layout
  *
@@ -158,14 +145,6 @@ a.sidebar-nav-item:focus {
     margin-right: 20rem;
   }
 }
-
-@media (min-width: 64em) {
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
-  }
-}
-
 
 
 /*

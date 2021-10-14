@@ -3,6 +3,8 @@ layout: post
 title: Ultralight / performant static web dev explorations
 tags: [web, lightweight, jekyll, shaders, exploration]
 date: 2021-06-15 16:00:00
+imgurl: 2021-06-15-compiling-postcards.png
+description: A quick roundup of some fast or lightweight web dev approaches I enjoy.
 ---
 
 My intense personal avoidance of laggy, heavyweight stacks is well voiced, especially since I have rampant focus issues when waiting for pages in development to reload. In particular, I often become sad in the presence of modern industrial frontend build systems that are slow even on local dev when very little code has been touched, although I frequently tolerate them for job purposes.

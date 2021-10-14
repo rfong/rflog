@@ -3,6 +3,8 @@ layout: post
 title: Phonemic similarity exploration
 tags: [linguistics, exploration]
 date: 2021-06-15 19:00:00
+imgurl: 2021-06-15-phoneme-hist.png
+description: A brief splash in a dataset of phonemic inventories in rare languages.
 ---
 
 Yesterday, I paired with Jacob on investigating [Phoible](https://phoible.github.io/), a really interesting structured dataset of phonemic inventories.

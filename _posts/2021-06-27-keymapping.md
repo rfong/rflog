@@ -2,6 +2,8 @@
 layout: post
 title: Downsizing my keymap from 6x3 to 5x3
 tags: [keyboard]
+imgurl: 2021-06-27-crkbd-5x3.jpeg
+description: Reducing my pinky load even further with a custom keymap.
 ---
 
 *Note: Throughout this post, I'll refer to layers with zero-indexing. So with no layer mods active, I'm on layer 0.*

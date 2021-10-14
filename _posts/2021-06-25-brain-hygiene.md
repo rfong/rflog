@@ -2,6 +2,7 @@
 layout: post
 title: Brain hygiene
 tags: [brain-hygiene]
+description: Collected life hacks from 8 weeks of running a support group for chronically distractible programmers.
 ---
 
 One of the things I've been working on while at Recurse Center is brain hygiene -- a challenging practice for anyone with a computer-centric career. For me, much of this is the art of curbing distraction, remembering to nourish my body, and staying mindful of how the things I'm doing are aligning with my goals.

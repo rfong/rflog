@@ -2,6 +2,7 @@
 layout: post
 title: Clojure dev setup links
 tags: [clojure, recurse-center, dev-setup]
+description: Handy resources I collected while setting up my Clojure env.
 ---
 
 Collected dev setup tips from my first week of playing with Clojure.

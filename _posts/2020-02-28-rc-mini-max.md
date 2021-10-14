@@ -1,7 +1,8 @@
 ---
 layout: post
-title: RC Minimax - Getting the most out of a Recurse Center mini-batch
+title: RC Minimax
 tags: [recurse-center, hot-tips]
+description: Getting the most out of my Recurse Center mini-batch, and prep I wish I had done.
 ---
 
 How does one actualize years of pent-up anticipation into a single week of [Recurse Center](https://www.recurse.com/)?

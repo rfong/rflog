@@ -2,6 +2,7 @@
 layout: post
 title: Automated Jekyll blog tags
 tags: [web, jekyll, tutorial]
+description: Walkthrough of my tag implementation for this blog.
 ---
 
 This blog is built on the [Hyde](https://github.com/poole/hyde) theme for [Jekyll](https://jekyllrb.com/), a light framework for building static websites which uses the [Liquid](https://jekyllrb.com/docs/liquid/) templating language. It didn't come with blog tags, so I had to poke around and find out how to implement them.

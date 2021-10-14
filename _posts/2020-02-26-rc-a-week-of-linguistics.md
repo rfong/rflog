@@ -2,6 +2,7 @@
 layout: post
 title: A summary of Linguistics Week (a.k.a. Recurse Center)
 tags: [recurse-center, linguistics]
+description: TLDR I got nerdsniped
 ---
 
 Like most monotonically linear-time-bound entities, I originally journaled this blog chronologically. It turns out there are a lot of learners and native speakers of other languages at RC, which led to some really interesting conversations about the structure and encoding of language! As Recurse veered from what I'd naively assumed would be a week of code into a week of linguistics, I realized it would make more sense to collate blogthoughts by the various themes that emerged.

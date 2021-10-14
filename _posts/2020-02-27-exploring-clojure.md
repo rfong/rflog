@@ -2,6 +2,7 @@
 layout: post
 title: My first few days of exploring Clojure
 tags: [clojure, functional-programming, recurse-center]
+description: Koans and functional elegance.
 ---
 
 In between many other delightful pursuits, I managed to allocate a few hours each day of my Recurse mini-batch to learning or implementing things in [Clojure](https://clojure.org/).

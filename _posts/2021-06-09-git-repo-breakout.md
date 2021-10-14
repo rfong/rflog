@@ -2,6 +2,7 @@
 layout: post
 title: Breaking out a git repo subdirectory
 tags: [git, refactor, hot-tips, tutorial]
+description: For when your micro-projects get too big and need to move into their own repo!
 ---
 
 I've been sporadically doing some [creative coding](https://rfong.github.io/creative-coding-p5) in a [sandbox repo](https://github.com/rfong/rc-sandbox) I made to play in during my time at Recurse Center. It's starting to become a real mishmash of languages. I just added some dependencies and a simple build system to my creative coding subdirectory, so it was about time to split that bad boy out into its own repo. But I was loath to lose my valuable commit history in the process.

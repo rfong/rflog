@@ -11,13 +11,13 @@ I started a computer hygiene channel and have been running a weekly Distractibil
 
 ## Distractibility Accountability FAQ
 
-*1. Perpetually drowning in a sea of browser tabs*
+*1. Help, I am perpetually drowning in a sea of browser tabs*
 
 The allure to hoard all possible information is strong in the modern era. Fortunately, [OneTab](https://www.one-tab.com/) is a cross-browser extension that lets you nuke all your tabs while saving the session to local storage so that you can retrieve it later.
 
 The best part for me is immediately realizing the instant I've nuked all the precious tabs that I don't need the vast majority of them, and can just pull out the few tabs I actually plan to follow up on.
 
-*2. Ineffective or chaotic note-taking*
+*2. Help, my note-taking is ineffective or chaotic*
 
 Graph-linked tagged note taking systems, or "knowledge management systems", are often a more cohesive way to retrieve notes than traditional hierarchical filesystem-like methods. [Obsidian](https://obsidian.md/) is a common RC favorite, since it's not only free, Markdown-based, and local-first (meaning you own all your data), but is also extensible with community-contributed plugins.
 

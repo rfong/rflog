@@ -178,4 +178,8 @@ This frame capturing step is taking 20-60ms in most cases, but occasionally shoo
 
 ## Summary
 
-In summary, I brought this sketch down from several seconds per frame to around 5-15fps mostly by getting rid of intermediate data representations, considering operations that were unnecessary in context or in bulk, and swapping around the orders of some operations. Good times, I love perf optimization!
+In summary, I brought this sketch down from several seconds per frame to around 5-15fps ("good enough") mostly by getting rid of intermediate data representations, considering operations that were unnecessary in context or in bulk, and swapping around the orders of some operations. Unfortunately, my code became much less encapsulated as a result, but I left (hopefully) copious enough comments that I won't forget why some of it looks odd if I return to this in the future.
+
+Good times, I love perf optimization!
+
+<img src="{{site.baseurl}}/assets/images/ghostlines-hands.gif" />

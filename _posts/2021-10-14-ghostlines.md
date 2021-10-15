@@ -1,21 +1,25 @@
 ---
 layout: post
 title: ghostlines
-date: 2021-10-14 15:09:00
-tags: [webcam, image-processing, creative-coding]
+date: 2021-10-14 23:30:00
+tags: [webcam, image-processing, creative-coding, performance-optimization]
 imgurl: 2021-10-14-ghostlines1.png
-description: A ghostly trace of your motion on a webcam. Not really in real time.
+description: A ghostly trace of your motion on a webcam. Now in real time!
 ---
 
 <a href="https://rfong.github.io/creative-coding/ghostlines/">
 <img alt="ghostlines example frame, with BMO moving swiftly toward stage right" src="{{site.baseurl}}/assets/images/2021-10-14-ghostlines1.png" />
 </a>
 
-[`ghostlines`](https://rfong.github.io/creative-coding/ghostlines/) was by far the least performant of my RC creative coding experiments, clocking in around 5 seconds per frame. This one was completely just for fun.
+[`ghostlines`](https://rfong.github.io/creative-coding/ghostlines/) was originally by far the least performant of my RC creative coding experiments, clocking in around 5 seconds per frame. However, I cleaned it up after drafting this blog post and got it down to 80-200ms today without even using Pyodide! More on that at the end.
+
+## Concept
 
 The Creative Coding prompts this day were "use lines wisely" (I used them quite unwisely), "self-portrait", and "look deep into the void". I decided I wanted to draw a sort of ghostly trace of pixels that had moved between frames.
 
 The intuitive first thought was to draw the trace of every "object" that had moved between frames, but clustering pixels and identifying them as objects is a pretty heavyweight ML problem, which I tend to avoid in favor of old-school vanilla computation. I would expect this approach to also be a bit chaotic (but in an interesting way) because of the possibility of line crossings, depending on the exact implementation.
+
+# First draft
 
 ## Motion of "mass" in an image
 
@@ -88,4 +92,88 @@ Finally, using the canvas API, I then drew a bunch of vectors (represented as re
 <img alt="ghostlines example frame, with BMO flying slowly upward" src="{{site.baseurl}}/assets/images/2021-10-14-ghostlines2.png" />
 </a>
 
-It's too painfully slow right now to actually be used as a webcam, but I like the freeze frames a lot.
+And there you have it! Ghostly ghost lines.
+
+# Performance optimization
+
+The original `ghostlines` was painfully slow, barely rendering at around 3-8 seconds per frame. I looked at my code again after originally drafting this blog post, and found a vast hoard of funky efficiency issues to fix up.
+
+### Functional programming is cute, but side effects are not
+
+It turns out I was storing a *lot* of duplicate or intermediate representations of the image data, which, at 480k pixels, is Quite A Lot of work for my sad web client. That cute inverse greyscale matrix I was talking about earlier? Very slow to stash in memory.
+
+By looking at already-in-memory image data instead of calculating a fresh matrix, I made the center of mass calculation 500x faster (dropping from 1000ms to ~2ms), and got a 3x speedup on `getDiffCoords(...)`, the function that samples the pixels which seem like they have changed.
+
+### Drawing lines in bulk
+
+I had overlooked that my line-drawing was not optimized for bulk lines. I was doing this for each individual line.
+
+```javascript
+ctx.beginPath();
+ctx.moveTo(...);
+ctx.lineTo(...);
+ctx.strokeStyle = ...
+ctx.stroke();
+```
+
+Like a SQL `commit`, this is unnecessary for bulk transactions. I fixed this to more efficiently draw bulk lines.
+
+```javascript
+ctx.beginPath();
+for (lineCoords in allCoords) {
+  ctx.moveTo(...);
+  ctx.lineTo(...);
+}
+ctx.strokeStyle = ...
+ctx.stroke();
+```
+
+Surprisingly, this did not give me a huge speedup, but it was better.
+
+### Speed up sampling
+
+I was being terribly foolish with my order of operations in `getDiffCoords(...)`. First, I was iterating over *all possible* 480,000 pixels to see which ones met my criteria, and then sampling out of those.
+
+I sped this up 300x (dropping from ~1000ms to 3ms) by *first* taking a random sample of possible coordinates, and *then* seeing which of those met my criteria.
+
+### Refactor out remaining intermediate representations.
+
+Following up from my first refactor, I picked through the code and refactored out a bunch of places where I was unnecessarily storing intermediate representations when I could instead be operating in-place on the existing image data.
+
+This made my initial setup/processing 5x faster, dropping several hundred milliseconds. By now I was hovering around 150-250 milliseconds, which was pretty good, but then I found one more thing.
+
+### Getting rid of array slices
+
+I fixed a performance issue in the initial greyscale filter by getting rid of an intermediate array slice that gets taken `N_PIXEL` times.
+
+Before:
+```javascript
+function filterBW(im) {
+  for (let i=0; i<im.data.length; i+=4) {  // rgba 4-tuple
+    let v = _.max(im.data.slice(i, i+3));
+    im.data[i] = im.data[i+1] = im.data[i+2] = v;
+  }
+}
+```
+
+After:
+```javascript
+function filterBW(im) {
+  for (let i=0; i<im.data.length; i+=4) {  // rgba 4-tuple
+    let v = _.max([im.data[i], im.data[i+1], im.data[i+2]]);
+    im.data[i] = im.data[i+1] = im.data[i+2] = v;
+  }
+}
+```
+
+This seemingly trivial change took my greyscale filter down from 80ms to basically nothing (1-2ms). Gotta be careful with those slices!
+
+### Dead ends with the Canvas API
+
+I also looked into the canvas drawing/capturing time. If you look at my source, one weird thing you might notice is that there are two separate canvases, each of which gets drawn once per captured frame. Apparently, this is a necessary intermediate step of capturing a frame from a video object, and there is no (accessible) way around it. 
+
+This frame capturing step is taking 20-60ms in most cases, but occasionally shoots up to 200ms.
+
+## Summary
+
+In summary, I brought this sketch down from several seconds per frame to around 5-15fps mostly by getting rid of intermediate data representations, considering operations that were unnecessary in context or in bulk, and swapping around the orders of some operations. Good times, I love perf optimization!

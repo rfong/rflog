@@ -2,17 +2,18 @@
 layout: post
 title: Automated Jekyll blog tags
 tags: [web, jekyll, tutorial]
-description: Walkthrough of my tag implementation for this blog.
+description: How I implemented tags for this blog theme (no, they did not come with it)
 ---
 
-This blog is built on the [Hyde](https://github.com/poole/hyde) theme for [Jekyll](https://jekyllrb.com/), a light framework for building static websites which uses the [Liquid](https://jekyllrb.com/docs/liquid/) templating language. It didn't come with blog tags, so I had to poke around and find out how to implement them.
+This blog is built on the [Hyde](https://github.com/poole/hyde) theme for [Jekyll](https://jekyllrb.com/), a light framework for building static websites which uses the [Liquid](https://jekyllrb.com/docs/liquid/) templating language. It didn't come with blog tags, so I had to poke around and figure out how to implement them.
 
 Since this blog is hosted on Github Pages, you can see all the code in [my public repo](https://github.com/rfong/rflog), but I figured a quick walkthrough post would be easier to navigate.
 
 
 ## Describing tags
 
-You can describe tags within the metadata of a Jekyll post (or page, etc). I'm formatting them as follows.
+One can describe arbitrary attributes within the metadata of a Jekyll post (or page, etc). I'm choosing to format the tag metadata as follows.
+
 {% highlight markdown %}
 ---
 layout: post
@@ -22,12 +23,13 @@ tags: [web, jekyll, all-about-tags]
 
 ... Lorem ipsum dolor sit
 {% endhighlight %}
+
 Since tag names will eventually need to be in a URI-friendly format, I'm going to keep it super simple and stick with a tag naming convention of `[\w\d-]+` (alphanumeric characters and hyphens allowed) for my blog. If you want to support spaces and other characters, you could do it with URI encoding, but I decided not to.
 
 
 ## Displaying tags on posts/pages
 
-You can display tags by adding a snippet like the following to a post template.
+I display the tags on each post by adding this snippet to the post template.
 {% highlight liquid %}{% raw %}
 <span class="post-tags">
   {% for tag in post.tags %}
@@ -45,7 +47,10 @@ In the Hyde theme, posts are described in two locations by default: `/_layouts/p
 
 #### Handling posts with no tags
 
-As written above, your `post-tags` div will appear empty on a post with no tags. However, if you're using a cute <i class="fas fa-tags"></i> icon like my blog does, you may want to hide this snippet when `tags` is empty. Apparently you can't do a simple empty array check in Liquid; I had to resort to [this StackOverflow hack](https://stackoverflow.com/questions/16762714/how-can-i-compare-a-strings-size-length-in-jekylls-liquid-templates/16765331#16765331).
+As written above, the `post-tags` div will appear empty on a post with no tags. However, if you're using a cute <i class="fas fa-tags"></i> icon like my blog does, you may want to hide this snippet when `tags` is empty.
+
+Apparently you can't do a simple empty array check in Liquid; I had to resort to [this StackOverflow hack](https://stackoverflow.com/questions/16762714/how-can-i-compare-a-strings-size-length-in-jekylls-liquid-templates/16765331#16765331).
+
 {% highlight liquid %}{% raw %}
 {% capture difference %}
   {{ post.tags | size | minus:1 }}
@@ -66,7 +71,7 @@ Again, if you're using an `_includes` partial, you will want to use `include.pos
 
 ## Auto-collecting tags across site
 
-If you want to display all tags somewhere, you will first need to collect them from across your site within the templating language. For this, I referenced [Codinfox's blog post](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/) on how they implemented tags and categories in Jekyll.
+If you want to display all tags somewhere, you will first need to collect them from across your site, within the templating language. For this, I referenced [Codinfox's blog post](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/) on how they implemented tags and categories in Jekyll.
 
 This snippet is borrowed directly from Codinfox, but I'm duplicating it here for quick reference.
 {% highlight liquid %}{% raw %}

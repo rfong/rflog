@@ -96,7 +96,7 @@ And there you have it! Ghostly ghost lines.
 
 # Performance optimization
 
-The original `ghostlines` was painfully slow, barely rendering at around 3-8 seconds per frame. I looked at my code again after originally drafting this blog post, and found a vast hoard of funky efficiency issues to fix up.
+The original `ghostlines` was painfully slow, barely rendering at around 3-8 seconds per frame. After writing the first half of this blog post and feeling sad about performance, I looked at the code again and found a vast hoard of funky efficiency issues (a natural side effect of speed-drafting and iterative changes) to fix up.
 
 ### Functional programming is cute, but side effects are not
 
@@ -116,7 +116,7 @@ ctx.strokeStyle = ...
 ctx.stroke();
 ```
 
-Like a SQL `commit`, this is unnecessary for bulk transactions. I fixed this to more efficiently draw bulk lines.
+Like a SQL `commit`, it is unnecessary to reinstate `beginPath()` and `stroke()` so often; you only need to do it at the beginning and end of a bulk set of transactions, or in this case, a bulk set of lines to draw at once.
 
 ```javascript
 ctx.beginPath();
@@ -128,7 +128,7 @@ ctx.strokeStyle = ...
 ctx.stroke();
 ```
 
-Surprisingly, this did not give me a huge speedup, but it was better.
+Surprisingly, this did not give me a particularly noticeable speedup -- I wonder if there was some preoptimization happening in my interpreter?
 
 ### Speed up sampling
 
@@ -144,7 +144,9 @@ This made my initial setup/processing 5x faster, dropping several hundred millis
 
 ### Getting rid of array slices
 
-I fixed a performance issue in the initial greyscale filter by getting rid of an intermediate array slice that gets taken `N_PIXEL` times.
+When profiling, I saw that the greyscaling filter was taking 80ms, while the brighten & contrast filters took under 2ms. Since these operations are mathematically similar, this sounds like probably another execution performance issue with array allocation.
+
+I found an intermediate array slice was getting taken `N_PIXEL` times, and got rid of this so I was indexing directly into `im.data`.
 
 Before:
 ```javascript
@@ -170,9 +172,9 @@ This seemingly trivial change took my greyscale filter down from 80ms to basical
 
 ### Dead ends with the Canvas API
 
-I also looked into the canvas drawing/capturing time. If you look at my source, one weird thing you might notice is that there are two separate canvases, each of which gets drawn once per captured frame. Apparently, this is a necessary intermediate step of capturing a frame from a video object, and there is no (accessible) way around it. 
+I also looked into the canvas drawing/capturing time. If you look at my source, one weird thing you might notice is that there are two separate canvases, each of which gets drawn once per captured frame. Apparently, this is a necessary intermediate step of capturing a frame from a video object, and there is no (accessible) way around it other than mucking directly with your GPU.
 
-This frame capturing step is taking 20-60ms in most cases, but occasionally shoots up to 200ms.
+This frame capturing step is taking 20-60ms in most cases, but occasionally shoots up to 200ms. So that accounts for the bulk of the remaining time. The math, redrawing, and line-drawing are now only taking around 5-10ms.
 
 ## Summary
 

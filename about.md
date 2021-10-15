@@ -12,3 +12,4 @@ My non-career interests are gratuitous in scope but ultimately finite; the most 
 * [favorite computery resources](https://github.com/rfong/computery-resources)
 * my [Github](https://github.com/rfong) & [gists](https://gist.github.com/rfong)
 * [general longform blog](https://medium.com/@rhetoricize) @ Medium
+* [creative coding sketches](https://rfong.github.io/creative-coding)

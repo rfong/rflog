@@ -7,7 +7,7 @@ My software career interests include distributed systems observability & resilie
 
 My non-career interests are gratuitous in scope but ultimately finite; the most frequently relevant crossovers are probably linguistics, music, education, robotics, and self-awareness. See my [homepage](https://rfong.github.io) for a fuller inventory.
 
-## Links
+## links
 
 * [favorite computery resources](https://github.com/rfong/computery-resources)
 * my [Github](https://github.com/rfong) & [gists](https://gist.github.com/rfong)

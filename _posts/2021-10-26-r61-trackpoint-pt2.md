@@ -131,6 +131,14 @@ To relieve cantilever strain on the acrylic while downward force is being applie
 
 I'll make a lasercutter file for this in the future when I'm less hosed.
 
+### Notes on trackpoint placement
+
+I did this a bit hastily because I was impatient to get it working and I knew I was going to redo the acrylic covers in a darker or more opaque color soon anyways. My current placement is ok but is not the most ergonomic.
+
+I would recommend aligning the trackpoint more with the home row. See `manna-harbour`'s and `jorne`'s [build photos](https://github.com/manna-harbour/crkbd/issues/1) for examples of better placement.
+
+You may also consider flipping it to face to the right so that it is closer to your hand, although I decided to make mine face left because I didn't want to have the solder joints on the exposed side.
+
 # 4. Assemble and enjoy!
 
 <img src="{{site.baseurl}}/assets/images/r61_assembly/assemble.jpg"/>

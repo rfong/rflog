@@ -1,6 +1,6 @@
 ---
 layout: post
-title: R61 Lenovo trackpoint mod, Part 2
+title: R61 trackpoint keyboard mod, Part 2
 tags: [hardware, electronics, keyboard]
 description: Assembling, mounting, and E2E connection.
 imgurl: r61_assembly/sideview.jpg

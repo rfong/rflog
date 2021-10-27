@@ -1,6 +1,6 @@
 ---
 layout: post
-title: R61 Lenovo trackpoint mod, Part 1
+title: R61 trackpoint keyboard mod, Part 1
 tags: [hardware, electronics, keyboard]
 description: On a quest to reunite with my most beloved of peripherals.
 imgurl: r61_trackpoint/disassembly_5.png

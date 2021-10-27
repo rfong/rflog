@@ -118,8 +118,8 @@ Note that we no longer have the button hardware, so you can ignore pins 3, 4, 5.
 
 ## Blockers to continuing
 
-To finish this project, I need to find just one SMC capacitor to use for the driver-to-keyboard connection. I have non-SMC capacitors, but they are huge relative to my controller, so that would make it hard to mount the trackpoint.
+I'd like to wait to reflash QMK until I can get hold of compatible machine pin headers to solder into spare Pro Micros, to avoid keyboard downtime in case I run into [any more firmware shenanigans]({{site.baseurl}}/2021/09/29/avr/).
 
-I'd also like to wait to reflash QMK until I solder compatible pins (e.g., diode or resistor legs) into some spare Pro Micros, to avoid keyboard downtime in case I run into [any more firmware shenanigans]({{site.baseurl}}/2021/09/29/avr/). Pro Micros are extremely inexpensive compared to the cost of cumulative nerve damage -- my stabbing pinky pain flared up again when my keyboard was last out of commission -- so I'd like to have a pair of spare working controllers at all times after dealing with *that* firmware debacle.
+Pro Micros are extremely inexpensive compared to the cost of cumulative nerve damage -- my stabbing pinky pain flared up again when my keyboard was last out of commission -- so I'd like to have a pair of spare working controllers at all times after dealing with *that* firmware debacle.
 
 Hope to finish up this project soon!

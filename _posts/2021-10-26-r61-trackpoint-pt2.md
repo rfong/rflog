@@ -10,7 +10,7 @@ imgurl: r61_assembly/sideview.jpg
 
 Part 2 of modding a trackpoint onto my `crkbd` keyboard.
 
-In [Part 1](/rflog/posts/2021/10/18/r61-trackpoint-pt1/), I sourced the trackpoint module and reassembled it into a smaller footprint.
+In [Part 1](/rflog/2021/10/18/r61-trackpoint-pt1/), I sourced the trackpoint module and reassembled it into a smaller footprint.
 
 In this post I go over wiring the driver board to the keyboard controller, and spatially packaging everything onto my keyboard. Because I was figuring this out on the fly while also wrestling with my bootloader, I did not do things in a wise or efficient order at all. However, I have rearranged my process so that it is laid out in a more reasonable order here.
 

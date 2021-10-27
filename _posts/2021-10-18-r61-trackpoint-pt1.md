@@ -2,15 +2,13 @@
 layout: post
 title: R61 Lenovo trackpoint mod, Part 1
 tags: [hardware, electronics, keyboard]
-description: On a quest to reunite with my most beloved of peripherals
+description: On a quest to reunite with my most beloved of peripherals.
 imgurl: r61_trackpoint/disassembly_5.png
 ---
 
 <img src="{{ site.baseurl }}/assets/images/r61_trackpoint/disassembly_5.png"/>
 
-The Lenovo trackpoint has historically been my most beloved single ergonomic peripheral for a long time, and I find it efficient as well as ergonomic -- back in the day, I was the fastest FRC robot CADer in town with just a Lenovo trackpoint keyboard and no external mouse. It probably helped that I never had to move my hands from where the shortcuts were while navigating.
-
-I have sorely missed the trackpoint since I switched over to OSX in order to simultaneously meet my coding and photo/art/video needs without dual-booting or VM frustrations, even though Apple makes the most painful keyboards ever to grace a laptop.
+The Lenovo trackpoint has historically been my most beloved single ergonomic peripheral for a long time. I have sorely missed the trackpoint since I switched over to OSX in order to simultaneously meet my coding and photo/art/video needs without dual-booting or VM frustrations, even though Apple makes the most painful keyboards ever to grace a laptop.
 
 As much as I enjoy Lenovo's original pillowy key travel, my worst RSI issue is that my pinky pain flares up pretty bad on a standard keyboard arrangement, which means it's no longer a sustainable option to just use external Lenovo keyboards. So I'm going for the dream setup: modding a Lenovo trackpoint module onto an ergonomic keyboard.
 
@@ -49,7 +47,7 @@ Here's what the back of the module looks like under the cover.
 
 There will be an extremely sticky piece of round foam seated around the trackpoint that is still holding the module in place. Push down hard on the trackpoint from the top and pry/wiggle the board from the bottom. It might take a scary amount of force to get it out; just make sure to apply force evenly and from the center so you aren't stressing the board.
 
-Break the yellowish flex cable off the driver board by stressing the joint back and forth a few times. This won't hurt the board, just the cable (which you won't need any more).
+Break the yellowish flex cable off the board by stressing the joint back and forth a few times. This won't hurt the board, just the cable (which you won't need any more).
 
 <img src="{{ site.baseurl }}/assets/images/r61_trackpoint/disassembly_6.jpg"/>
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syntax highlighting my keymap quickref
-tags: [bash]
+tags: [bash, no-code]
 imgurl: 2021-11-17-keymap-withcolor.png
 ---
 

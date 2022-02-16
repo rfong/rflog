@@ -5,7 +5,7 @@ tags: [git, refactor, hot-tips, tutorial]
 description: For when your micro-projects get too big and need to move into their own repo!
 ---
 
-I've been sporadically doing some [creative coding](https://rfong.github.io/creative-coding-p5) in a [sandbox repo](https://github.com/rfong/rc-sandbox) I made to play in during my time at Recurse Center. It's starting to become a real mishmash of languages. I just added some dependencies and a simple build system to my creative coding subdirectory, so it was about time to split that bad boy out into its own repo. But I was loath to lose my valuable commit history in the process.
+I've been sporadically doing some [creative coding](https://rfong.github.io/creative-coding) in a [sandbox repo](https://github.com/rfong/rc-sandbox) I made to play in during my time at Recurse Center. It's starting to become a real mishmash of languages. I just added some dependencies and a simple build system to my creative coding subdirectory, so it was about time to split that bad boy out into its own repo. But I was loath to lose my valuable commit history in the process.
 
 [This blog post](http://tuxdiary.com/2015/08/13/move-subdir-new-git-repo-preserve-history/) tipped me off to the tricky `git filter-branch` command to filter your source and history down to a subdirectory, but overall my approach ended up taking a lot fewer steps than theirs.
 

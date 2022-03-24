@@ -2,7 +2,7 @@
 layout: post
 title: Brain hygiene, spring cleaning edition
 tags: [brain-hygiene, recurse-center]
-description: Executive function self-care tactics, and various personal methods of circumventing ADHD
+description: Revisiting my executive function self-care tactics for accountability against the inevitability of distractibility
 imgurl: heart-brain.png
 ---
 

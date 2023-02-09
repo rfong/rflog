@@ -87,7 +87,7 @@ XOR is **symmetric**: the output is the same if you switch the order of the inpu
 
 XOR is **deterministic**: the output is always the same when given the same inputs.
 
-This may all sound kind of trivial, but it's extremely valuable. With our weird distance metric deterministically and symmetrically defined across the ID space, no distributed coordination is necessary for nodes in the system to agree that any given pair of keys is the same distance apart, regardless of what state your node has.
+This may all sound kind of trivial and obvious in the context of bitwise operations, but it's extremely valuable in the context of distributed systems. With our weird distance metric deterministically and symmetrically defined across the ID space, no distributed coordination is necessary for nodes in the system to agree that any given pair of keys is the same distance apart, regardless of what state your node has.
 
 This increases Kademlia's ability to optimize queries. Nodes only need to know about a certain number of other nodes, and can route queries in `O(log(n))` steps that get "closer" and "closer" to a given target key.
 

@@ -10,7 +10,7 @@ imgurl: heart-brain.png
 
 I'm returning to (virtual) Recurse Center next week to help boost my self-accountability during my time away from work. As preparation, I decided to do a little planning session and revisit the current state of my brain hygiene arsenal.
 
-(If you do not have severe distractibility issues, then this post will probably seem pointlessly fussy and overkill to you, but I assure you it's all quite critical for me.)
+(If you do not have severe distractibility issues, then this post will probably seem pointlessly fussy and overkill to you. This is merely the elaborate house of anti-distraction cards that seems to help curb my own brain, which is in constant danger of being distracted by ten things each moment of every day.)
 
 # Favorite computer-side approaches
 
@@ -47,6 +47,18 @@ In general, [my cooking is already extremely optimized for convenience and speed
 ## Outside
 
 Sunlight and regular outdoors time are also necessary for my mental health. My e-notebook makes it a lot easier for me to bike to a nearby park to read research papers without wrestling with a printer, so that's something I plan to try.
+
+## Movement
+
+I have become significantly better at remembering to move my body regularly since learning about how the [lymphatic system](https://en.wikipedia.org/wiki/Lymphatic_system) works. Familiar with the infamous statistics about how a sedentary lifestyle is tightly correlated with premature death [[1](https://www.cdc.gov/Pcd/issues/2018/17_0354.htm)][[2](https://pubmed.ncbi.nlm.nih.gov/15317985/)][[3](https://www.nhlbi.nih.gov/news/2020/daily-bouts-exercise-correlate-fewer-incidents-premature-death-due-sedentary-lifestyles)], and how just a half hour each day of exercise can significantly reduce it?
+
+The lymphatic system helps enrich and distribute your body's lymphocytes (immune cells) around your body. Like the circulatory system, fluid is transported around through a network of vessels. Unlike the circulatory system (which is pumped by your heart), the lymphatic system does not have its own dedicated pump. Lymph is actually pumped through one-way valves using the pressure differentials from the everyday movement of your body.
+
+In other words, your immune system relies on a built-in Dune stillsuit that you have to move your body regularly in order to operate.
+
+I have never been motivated by abstract statistics, even scary ones, but now I actually remember to get up and wiggle my body around regularly because I remember that concrete connection that I need to move my body in order to move my lymph.
+
+[Stretchly](https://hovancik.net/stretchly/) also helps! It's a desktop app that periodically covers your screen with a random prompt for a movement idea.
 
 ## EOD routine
 
@@ -123,7 +135,7 @@ I'm much happier whenever I can get outside, and the device already saves me nea
 
 Though typing has a much faster velocity than handwriting in terms of wpm, it can be slower for me in practice because I tend to compulsively prematurely micro-edit sentences 10 times, or look up a link I'm going to cite and then fall down a multi-hour rabbithole of reading related articles. It's like the [urban planning common knowledge](https://www.indiebound.org/book/9780865477728) about how cars *feel* fast to their drivers even if they're just clogging up the street by spending half an hour circling around for parking.
 
-I've always been a heavy paper user, but something about an e-notebook makes it even easier to write drafts. The first week I got my e-notebook, I sat down and dumped a complete 30-page draft out of my brain for 11 hours straight without once stopping to get distracted by the usual culprits. **It was almost like not having ADHD**.
+I've always been a heavy paper user, but something about an e-notebook makes it even easier to write drafts. The first week I got my e-notebook, I sat down and dumped a complete 30-page draft out of my brain for 11 hours straight without once stopping to get distracted by the usual culprits. **It was almost like not having untreated ADHD**.
 
 Fancy that: a world where distractibility isn't a major issue. Too bad I work in computers.
 

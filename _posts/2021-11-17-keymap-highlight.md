@@ -3,6 +3,7 @@ layout: post
 title: Syntax highlighting my keymap quickref
 tags: [bash, no-code]
 imgurl: 2021-11-17-keymap-withcolor.png
+description: What did I fill all four layers on my keyboard with, anyway?
 ---
 
 I realized I needed a CLI quickref to my keymap, which is now a QMK `.c` file that I am modding constantly. I didn't have to write any real code, because coders L O V E their syntax highlighters and string manipulation, and there are already open source packages for anything you can imagine in that space, but I learned about a couple of fun new packages and `awk`/`sed` tidbits in the process.

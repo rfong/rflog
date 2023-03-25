@@ -3,6 +3,7 @@ layout: post
 title: Compact human-readable Spotify export
 tags: [own-your-data, data-munging, no-code, note-to-self]
 imgurl: 2022-01-30-reasonable.png
+description: Save your music curation data in case Spotify ever deletes it or implodes!
 ---
 
 Annoyed at the inevitability that VC-backed software platforms you rely on will spontaneously close one day and drop your years of useful data with no good way to export it in time even though you pay for their services? Me too, constantly!

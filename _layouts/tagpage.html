@@ -9,7 +9,9 @@ layout: default
 {% for post in site.posts %}
 	{%comment%}
 		This should be filterable with `where_exp`, but I couldn't get it to work. {%endcomment%}
-	{% if post.tags contains page.tag %}
+  {% assign techTags = post.techTags | split: ', ' %}
+  {% assign tags = post.tags | concat: techTags %}
+	{% if tags contains page.tag %}
   	{% include post_listing.html %}
 	{% endif %}
 {% endfor %}

@@ -8,18 +8,23 @@
 	</h1>
 	<div class="post-head">
 		<span class="post-date">{{ include.post.date | date_to_string }}</span>
+
+    {% assign techTags = include.post.techTags | split: ", " %}
+    {% assign tags = include.post.tags | concat: techTags %}
+
 		{% comment %}
 			Hacky shit to check for an empty array in Liquid, apparently{% endcomment %}
-		{% capture difference %} {{ include.post.tags | size | minus:1 }} {% endcapture %}
+		{% capture difference %} {{ tags | size | minus:1 }} {% endcapture %}
 		{% if difference contains '-' %}
 		{% else %}
   		<span class="post-tags">
       <i class="fas fa-tags"></i>
-  			{% for tag in include.post.tags %}
+  			{% for tag in tags %}
   				<a class="post-tag" href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
       	{% endfor %}
       </span>
 		{% endif %}
+
   </div>
   {% if include.post.content %}
     {{ include.post.content }}

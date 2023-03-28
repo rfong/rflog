@@ -1,5 +1,5 @@
 {% comment %}
-This snippet is borrowed from Codinfox's blog.
+Lines 6-33 are borrowed from Codinfox's blog.
 https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
 {% endcomment %}
 
@@ -28,6 +28,30 @@ The following part removes duplicated tags and invalid tags like blank tag.
 		{% endif %}
 		{% unless tags contains tag %}
 		  {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+
+{% comment %}
+=======================
+Duplicate the above for techTags, which is a string.
+=======================
+{% endcomment %}
+{% assign rawtags = "" %}
+{% for post in site.posts %}
+	{% assign ttags = post.techTags | split:', ' | join:'|' | append:'|' %}
+	{% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+{% assign techTags = "" %}
+{% for tag in rawtags %}
+	{% if tag != "" %}
+		{% if techTags == "" %}
+		  {% assign techTags = tag | split:'|' %}
+		{% endif %}
+		{% unless techTags contains tag %}
+		  {% assign techTags = techTags | join:'|' | append:'|' | append:tag | split:'|' %}
 		{% endunless %}
 	{% endif %}
 {% endfor %}

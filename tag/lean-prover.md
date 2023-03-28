@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-tag: jekyll
+tag: lean-prover
 robots: noindex
 ---

@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-tag: optimism
+tag: all-about-tags
 robots: noindex
 ---

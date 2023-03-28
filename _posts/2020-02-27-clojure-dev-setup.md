@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Clojure dev setup links
-tags: [clojure, recurse-center]
+tags: [recurse-center]
+techTags: clojure
 description: Handy resources I collected while setting up my Clojure env.
 ---
 

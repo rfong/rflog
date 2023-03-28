@@ -2,6 +2,7 @@
 layout: post
 title: Why Kademlia uses XOR as a distance metric
 tags: [data-structures, reading]
+techTags: bittorrent
 description: An educational interlude into the bitwise workings of BitTorrent!
 imgurl: kademlia/binary_tree_1level.png
 ---

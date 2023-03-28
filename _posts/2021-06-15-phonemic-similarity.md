@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Phonemic similarity exploration
-tags: [linguistics, exploration]
+tags: [linguistics, exploration, datavis]
+techTags: python, jupyter
 date: 2021-06-15 19:00:00
 imgurl: 2021-06-15-phoneme-hist.png
 description: A brief splash in a dataset of phonemic inventories in rare languages.

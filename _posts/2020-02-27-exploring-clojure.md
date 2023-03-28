@@ -1,7 +1,8 @@
 ---
 layout: post
 title: My first few days of exploring Clojure
-tags: [clojure, functional-programming, recurse-center]
+tags: [functional-programming, recurse-center]
+techTags: clojure
 description: Koans and functional elegance.
 ---
 

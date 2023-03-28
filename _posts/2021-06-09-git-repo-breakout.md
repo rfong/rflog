@@ -2,6 +2,7 @@
 layout: post
 title: Breaking out a git repo subdirectory
 tags: [refactor, hot-tips, tutorial, workflow]
+techTags: git
 description: For when your micro-projects get too big and need to move into their own repo!
 ---
 

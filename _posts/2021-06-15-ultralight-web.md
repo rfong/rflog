@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ultralight / performant static web dev roundup
-tags: [web, shaders]
+techTags: web, shaders
 date: 2021-06-15 16:00:00
 imgurl: 2021-06-15-compiling-postcards.png
 description: A quick roundup of some fast or lightweight web dev approaches I enjoy.

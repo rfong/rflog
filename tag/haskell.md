@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-tag: low-tech
+tag: haskell
 robots: noindex
 ---

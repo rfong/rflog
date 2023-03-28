@@ -1,7 +1,8 @@
 ---
 layout: post
 title: R61 trackpoint keyboard mod, Part 2
-tags: [hardware, electronics, keyboard]
+tags: [keyboard]
+techTags: hardware, electronics, soldering
 description: Assembling, mounting, and E2E connection.
 imgurl: r61_assembly/sideview.jpg
 ---

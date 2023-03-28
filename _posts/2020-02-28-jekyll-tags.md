@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Automated Jekyll blog tags
-tags: [web, tutorial, jekyll]
+tags: [tutorial]
+techTags: web, jekyll
 description: How I implemented tags for this blog theme (no, they did not come with it)
 ---
 

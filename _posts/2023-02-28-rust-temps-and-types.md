@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Rust learnings from a simple temperature converter
-tags: [rust-lang, exploration]
+tags: [exploration]
+techTags: rust-lang, regex
 description: Lazy static regexes, overflow checking, and praise for the Rust book
 ---
 

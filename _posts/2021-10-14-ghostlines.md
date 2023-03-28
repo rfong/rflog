@@ -2,7 +2,8 @@
 layout: post
 title: ghostlines
 date: 2021-10-14 23:30:00
-tags: [webcam, image-processing, creative-coding, performance-optimization]
+tags: [image-processing, creative-coding, performance-optimization]
+techTags: webcam, javascript
 imgurl: ghostlines-hands.gif
 description: A ghostly trace of your motion on a webcam. Now in real time!
 ---

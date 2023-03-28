@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RC Minimax
-tags: [recurse-center, hot-tips]
+tags: [recurse-center, hot-tips, workflow]
 description: Getting the most out of my Recurse Center mini-batch, and prep I wish I had done.
 ---
 

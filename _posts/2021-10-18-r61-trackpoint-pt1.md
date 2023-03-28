@@ -1,7 +1,8 @@
 ---
 layout: post
 title: R61 trackpoint keyboard mod, Part 1
-tags: [hardware, electronics, keyboard]
+tags: [keyboard]
+techTags: hardware, electronics, soldering
 description: On a quest to reunite with my most beloved of peripherals.
 imgurl: r61_trackpoint/disassembly_5.png
 ---

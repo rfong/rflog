@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog tag refactor&#58; splitting 'tags' and 'tech-tags'
+title: Blog tag refactor&#58; splitting 'tags' and 'tech tags'
 tags: [refactor, ux]
 techTags: jekyll, web
 description: I implemented another tag type on my blog to compartmentalize actual concepts from tech stacks
@@ -18,6 +18,8 @@ My current post metadata structure looks something like this, where `tags` is an
 
 <img alt="" src="{{site.baseurl}}/assets/images/2023-03-27_post_metadata.png" />
 
+### Tech stacks ≠ concepts
+
 In my personal opinion, **descriptions of tech stacks look like meaningless word salad** if you aren't specifically familiar with the frameworks and languages that make them up (and often, even, when you *are* familiar with them), so they're not actually that helpful to scan on a tag page. But they are very helpful when you have a specific framework or language in mind, and want to find more posts on that topic.
 
 There are other kinds of tags I find more useful to scan from an "all tags" page, and generally think about as totally compartmentalized from tech stacks. These tend to describe the flavor or mindset of the blog post.
@@ -26,7 +28,7 @@ With this in mind, I decided to refactor my "tags" into:
 1. "**tech tags**" for terms I might use to describe a specific project's stack, such as names of frameworks (`#git`, `#jekyll`, `#wasm`), names of programming languages (`#clojure`, `#rust`, `#python`), or other concrete categories of technologies (`#webcam`, `#web`, `#firmware`, `#shaders`).
 2. "**tags**" for more conceptual terms, such as blog post flavors (`#hot-tips`, `#tutorial`), "soft" topics of discussion (`#industry`, `#workflow`, `#own-your-data`), or fields (`#distributed-systems`, `#scientific-computing`).
 
-### Quick implementation annoyance, resolved by realizing `tags` are magic
+### Quick implementation annoyance, resolved by realizing `tags` are treated as magic variables in Jekyll
 
 <img alt="" src="{{site.baseurl}}/assets/images/2023-03-27_techTags.png" />
 
@@ -36,7 +38,7 @@ Mysteriously, `tags` and `techTags` appeared to behave differently, with `tags` 
 
 I eventually read the Jekyll documentation and realized that `tags` are handled as a special case in the front matter. I had mistakenly assumed Jekyll was parsing all array-like front-matter variable values to arrays, when in reality it was probably singling out `tags`.
 
-I explicitly parsed the value of `techTags` to an array, and then just had to refactor some of my automated tag compilation work from way back when I first implemented tags on this blog.
+I explicitly parsed the value of `techTags` to an array, and then just had to refactor some of my automated tag compilation work from way back [when I first implemented tags on this blog]({{site.baseurl}}/2020/02/28/jekyll-tags/).
 
 ### The two types of tags are mostly treated similarly
 
@@ -44,3 +46,12 @@ I explicitly parsed the value of `techTags` to an array, and then just had to re
 
 <img alt="" src="{{site.baseurl}}/assets/images/2023-03-27_backwards_compatibility.png" width=400 />
 
+### Manual refactor
+
+I went back through *all of my blog posts* and did the manual work of deciding which tags were techTags. This was a deliberate side effect of this refactor in that I wanted to change my way of thinking about my posts in terms of stack versus concept.
+
+### Much more browseable now!
+
+<img alt="" src="{{site.baseurl}}/assets/images/2023-03-27_refactored.png" />
+
+The compartmentalization feels comprehensible enough that I even went to the luxury of throwing in a bunch of tech tags I would previously have been really stingy about cluttering the tags page with, like `#soldering` and `#regex`!

@@ -12,7 +12,7 @@ title: Tags
   {% endfor %}
 </div>
 
-<h1>Tech tags</h1>
+<h1>Tech stack tags</h1>
 <div class="tags">
   <i class="fa fa-tags"></i>
   {% for tag in techTags %}

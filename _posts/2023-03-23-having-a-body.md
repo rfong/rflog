@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RC sp1'23&#58; having a body and goals
-tags: [having-a-body, recurse-center, brain-hygiene]
+tags: [recurse-center, workflow]
 description: 6 weeks of debugging physical issues, within the accountability timebox of Recurse Center's core hours
 ---
 

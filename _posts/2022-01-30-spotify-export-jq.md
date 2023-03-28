@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Compact human-readable Spotify export
-tags: [own-your-data, data-munging, no-code, note-to-self]
+tags: [own-your-data, data-munging]
 imgurl: 2022-01-30-reasonable.png
 description: Save your music curation data in case Spotify ever deletes it or implodes!
 ---

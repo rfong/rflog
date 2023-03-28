@@ -2,7 +2,7 @@
 layout: post
 title: Low-res webcam processing experiments
 date: 2021-10-14 14:09:00
-tags: [webcam, image-processing, low-tech, creative-coding]
+tags: [webcam, image-processing, creative-coding]
 imgurl: 2021-10-14-dithercam.png
 description: What can I say, I love old-school image compression.
 ---

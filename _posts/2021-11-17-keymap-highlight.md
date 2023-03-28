@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syntax highlighting my keymap quickref
-tags: [bash, no-code]
+tags: [bash]
 imgurl: 2021-11-17-keymap-withcolor.png
 description: What did I fill all four layers on my keyboard with, anyway?
 ---

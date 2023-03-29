@@ -48,7 +48,7 @@ I explicitly parsed the value of `techTags` to an array, and then just had to re
 
 ### Manual refactor
 
-I went back through *all of my blog posts* and did the manual work of deciding which tags were techTags. This was a deliberate side effect of this refactor in that I wanted to change my way of thinking about my posts in terms of stack versus concept.
+I went back through *all of my blog posts* and did the manual work of deciding which tags were techTags. This was a deliberate side effect of this refactor in that I wanted to re-brain-index my posts' concepts separately from their tech stacks.
 
 ### Much more browseable now!
 

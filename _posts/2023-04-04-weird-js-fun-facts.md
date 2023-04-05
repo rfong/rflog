@@ -3,6 +3,7 @@ layout: post
 title: Weird Javascript fun facts I stumbled over while building a Bezier curve editor
 tags: [hot-tips]
 techTags: javascript
+imgurl: nullish_coalescing_op.png
 description: The joys of navigating proper encapsulation when your first-class functions have gone wild
 ---
 

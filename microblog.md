@@ -3,7 +3,7 @@ layout: page
 title: Microblog
 ---
 
-Daily journal snippets with less rhyme, reason, or polish.
+Daily journal snippets with no rhyme, reason, or polish.
 
 <ul class="microblogs">
     {% for post in site.microblog reversed %}

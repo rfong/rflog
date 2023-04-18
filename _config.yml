@@ -17,8 +17,8 @@ permalink:        pretty
 
 # Setup
 title:            rflog
-tagline:          "rfong's computerish journalings"
-description:      "computerish journalings"
+tagline:          "rfong's computery blog"
+description:      "a computery blog"
 url:              https://rfong.github.io
 baseurl:          /rflog
 

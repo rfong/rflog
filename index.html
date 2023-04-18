@@ -8,9 +8,12 @@ title: Home
 
 <div class="posts row">
   {% for post in paginator.posts %}
+  {% capture arrNotEmpty %} {{post.categories | size | minus:1 }} {% endcapture %}
+  {% if arrNotEmpty contains '-' %}
     <div class="col col-12 col-xl-4">
 	  {% include post_thumbnail.html post=post %}
     </div>
+  {% endif %}
   {% endfor %}
 </div>
 

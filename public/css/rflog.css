@@ -43,6 +43,10 @@ a {
 	display: inline-block;
 }
 
+.microblog-preview {
+  margin-bottom: 1rem;
+}
+
 .post-thumbnail {
   margin-bottom: 3rem;
   padding-top: 0.5rem;

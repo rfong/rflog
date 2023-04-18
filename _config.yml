@@ -36,3 +36,10 @@ feed:
 version:          1.0.0
 
 repository:       rfong/rflog
+
+# Collections (non-posts)
+include: ["microblog"]
+collections:
+  microblog:
+    output: true
+    permalink: /:collection/:path/

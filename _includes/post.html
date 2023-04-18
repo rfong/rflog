@@ -1,11 +1,24 @@
 {% comment %}
 	Post body, which may be included in multiple places.
-	{% endcomment %}
+{% endcomment %}
+
+{% assign splitName = include.post.name | split: "." | first | split: '-' %}
+{% assign nameLen = splitName | size | minus: 3 %}
+{% assign nameFromPath = splitName | slice: 3, nameLen | join: " " %}
 
 <div class="post">
+  {% if include.post.title or include.post.collection=="microblog" %}
   <h1 class="post-title">
-		<a href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a>
+    <a href="{{ site.baseurl }}{{ include.post.url }}">
+      {% if include.post.title and include.post.title != "" %}
+        {{ include.post.title }}
+      {% else %}
+        {{ nameFromPath }}
+      {% endif %}
+    </a>
 	</h1>
+  {% endif %}
+
 	<div class="post-head">
 		<span class="post-date">{{ include.post.date | date_to_string }}</span>
 

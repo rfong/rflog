@@ -7,7 +7,7 @@ description: Jekyll-magic fun facts to spawn low-friction daily journal entries
 
 My blog has a <a href="{{site.baseurl}}/microblog/">microblog</a> now!
 
-The first week I ever did RC, I posted quick, unpolished journal entries without thinking about it too hard. As time slogged on, I inevitably polished my posts to be more and more explanatory and user-facing. As a result, my blog is pretty sparse.
+The first week I ever did RC, I posted quick, unpolished journal entries without thinking about it too hard. As time slogged on, I inevitably polished my posts to be more and more explanatory, socratic, and user-facing. As a result, my blog is pretty sparse because my journal notes don't make the cut I have started to hold myself to for whatever reason.
 
 Inspired by the ease of [Obsidian's daily notes plugin](https://help.obsidian.md/Plugins/Daily+notes), which simply spawns a new note titled with today's date, I implemented a similarly low-friction daily notes feature for my blog, and moved over my old unpolished journal entries to it.
 

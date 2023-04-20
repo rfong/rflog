@@ -12,3 +12,8 @@ title: Quickref
 
 ## web
 - [Liquid templating cheat sheet](https://www.fabriziomusacchio.com/blog/2021-08-12-Liquid_Cheat_Sheet/)
+
+## creativity
+- [perchance.org list of useful random generators](https://perchance.org/useful-generators)
+- ["oblique strategies" prompt generator](http://stoney.sb.org/eno/oblique.html)
+- [anniebart coding prompt generator](https://anniebart-prompt-generator.glitch.me/)

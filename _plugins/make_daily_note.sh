@@ -11,6 +11,8 @@ if [ -f "$fname" ]; then
   echo "$fname already exists."
 else
   cp _microblog/_template.md $fname
+  echo 'date: '`date +"%Y-%m-%d %H:%M:%S"` >> $fname
+  echo "---" >> $fname
   echo "created $fname"
 fi
 

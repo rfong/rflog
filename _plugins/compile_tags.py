@@ -9,9 +9,10 @@ Current convention expected for tag names is r/[-\w\d]+/
 '''
 
 import glob
+import itertools
 import os
 
-POST_DIR = '_posts/'
+POST_DIRS = ['_posts/', '_microblog/']
 TAG_DIR = 'tag/'
 TAG_TYPES = ['techTags', 'tags']
 FRONT_MATTER_DIVIDER = '---'
@@ -19,7 +20,9 @@ FRONT_MATTER_DIVIDER = '---'
 def main():
   # Collect all tags from all posts.
   all_tags = []
-  for fname in glob.glob(POST_DIR + '*.md'):
+  filenames = itertools.chain.from_iterable(
+      glob.glob(dirname+'*.md') for dirname in POST_DIRS)
+  for fname in filenames:
     with open(fname, 'r') as f:
       seen_divider = False
       for line in f:

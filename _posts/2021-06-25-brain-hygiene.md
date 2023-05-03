@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Brain hygiene
-tags: [workflow]
+tags: [workflow, brain-hygiene]
 description: Collected life hacks from 8 weeks of running a support group for chronically distractible programmers.
 imgurl: heart-brain.png
 ---

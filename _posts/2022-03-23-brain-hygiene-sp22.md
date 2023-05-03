@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Brain hygiene, spring cleaning edition
-tags: [recurse-center, workflow]
+tags: [recurse-center, workflow, brain-hygiene]
 description: Revisiting my executive function self-care tactics for accountability against the inevitability of distractibility
 imgurl: heart-brain.png
 ---

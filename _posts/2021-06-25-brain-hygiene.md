@@ -34,7 +34,7 @@ This will vary by person, but personally, my prerequisites for having executive 
 
 Sleep hygiene is another really important one for many people! [f.lux](https://justgetflux.com/) goes a really long way in filtering blue light out of your displays after the sun goes down so that your body isn't artificially scammed out of getting sleepy.
 
-Distractibility Accountabilibbudies seem to vary on their sleep hygiene needs otherwise, though. Some benefit from white noise machines, some don't. Some need to have sunlight gradually cranked up onto their face in the morning, and some desire perfect darkness until the moment they awaken.
+Distractibility Accountabilibuddies seem to vary on their sleep hygiene needs otherwise, though. Some benefit from white noise machines, some don't. Some need to have sunlight gradually cranked up onto their face in the morning, and some desire perfect darkness until the moment they awaken.
 
 What are your top 2-3 needs to keep your body happy?
 

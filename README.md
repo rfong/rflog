@@ -30,7 +30,8 @@ Jekyll [hooks](https://jekyllrb.com/docs/plugins/hooks/) are a subtype of [plugi
 
 ## TODO
 
-- [ ] separate "topic" tags
+- [x] separate "topic" tags
+- [ ] tagged microblog posts don't show up on tag pages
 - [ ] per-page comments
 - [ ] per-page likes
 - [ ] basic analytics

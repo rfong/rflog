@@ -73,7 +73,7 @@ If you have any dependencies that are relevant to your planned starter projects,
 
 Even with smaller routine dependencies, you'll be glad you set them up rather than wait until you are filled with extreme stoke during Week 1 and have grabbed a pairing station with someone you are excited to collaborate with, only to realize that you cannot start because your packages need an hour to install. 
 
-If you'll be working in langs that may require you to have multiple versions installed on your machine simultaneously for reasons completely outside your control, such as Python or Ruby, I would **highly** recommend installing a language version manager for them, as it could save you several hours of mid-batch teeth-gnashing.
+If you'll be working in langs that may require you to have multiple versions installed on your machine simultaneously for reasons completely outside your control, such as Python or Ruby, I would **highly** recommend installing a language version manager for them (such as [pyenv](https://github.com/pyenv/pyenv)/[conda](https://docs.conda.io/en/latest/) for Python, or [rbenv](https://github.com/rbenv/rbenv) for Ruby), as it could save you several hours of mid-batch teeth-gnashing.
 
 ## Think about who you want to collaborate with (technically and energetically)
 

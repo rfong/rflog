@@ -31,9 +31,9 @@ Jekyll [hooks](https://jekyllrb.com/docs/plugins/hooks/) are a subtype of [plugi
 ## TODO
 
 - [x] separate "topic" tags
+- [ ] per-page comments plugin (disqus?)
+- [ ] refactor all existing posts to a Jekyll category named `code` so I can use this blog for other things too
 - [ ] tagged microblog posts don't show up on tag pages
-- [ ] per-page comments
-- [ ] per-page likes
 - [ ] basic analytics
 - [x] RSS feed
 - [ ] meta info/img for embeds

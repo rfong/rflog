@@ -74,10 +74,19 @@ a {
 	max-width: 100%;
 }
 
+.post img {
+  max-height: 600px;
+  margin: 0 auto;
+}
+
 /* Manual HTML usage outside Markdown */
 
 .caption {
 	text-align: center;
 	font-style: oblique;
 	font-size: 16px;
+}
+
+.center {
+  text-align: center;
 }

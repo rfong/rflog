@@ -2,16 +2,29 @@ This is my mostly-code blog! It runs on [Jekyll](https://jekyllrb.com/) and is f
 
 ## Run server
 
+Serve: `make serve`
+
 Is Ruby working? If not:
 ```
 rvm get stable --auto-dotfiles
 rvm use ruby-2.6.3
 ```
 
-Serve:
-```
-bundle exec jekyll serve
-```
+## Writing posts
+
+### Daily notes
+
+To generate a daily micro-note: `make daily`.
+
+### Images
+
+Store images in `assets/images`.
+
+Include as:
+
+`<img src="{{site.baseurl}}/assets/images/MY_IMAGE_NAME.EXT" />`
+
+Caption images with: `<p class="caption"></p>`.
 
 ## Implementation notes to self
 

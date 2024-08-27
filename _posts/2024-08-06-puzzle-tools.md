@@ -3,6 +3,7 @@ layout: post
 title: oddly specific little puzzle tools
 tags: [puzzle, linguistics]
 techTags: regex
+imgurl: 2024-08-06-ipa-results-after-filter.png
 description: a week of porting puzzle tool scripts to web
 ---
 
@@ -99,4 +100,4 @@ I filtered my data to only include words whose spellings were included in Wordni
 
 <img src="{{site.baseurl}}/assets/images/2024-08-06-ipa-results-after-filter.png" />
 
-As a bonus, filtering by Wordnik cut down my preprocessed data filesize by 60%, or 4Mb!
+As a bonus, filtering by Wordnik cut down my preprocessed data's filesize by 60%, or 4Mb!

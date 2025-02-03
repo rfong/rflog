@@ -5,7 +5,7 @@ title: About
 
 My software career interests include distributed systems observability & resilience, data engineering, enabling my teams to never have to trip over the same issue thrice, and work culture & team communication. I love software that's local-first, intentionally low-tech, ultralight, anti-consumerist, or that generally tries its best not to get in the way of being present in the physical world.
 
-My non-career interests are gratuitous in scope but ultimately finite; the most frequently relevant crossovers are probably linguistics, music, education, robotics, communication, and self-awareness. See my [homepage](https://rfong.github.io) for a fuller inventory.
+My non-career interests are gratuitous in scope but ultimately finite; the most frequently relevant crossovers are probably linguistics, music, education, crafting, robotics, communication, and self-awareness. Also maybe Rubik's cubes. See my [homepage](https://rfong.github.io) for a fuller inventory.
 
 ## links
 
@@ -14,3 +14,7 @@ My non-career interests are gratuitous in scope but ultimately finite; the most 
 * [general longform blog](https://medium.com/@rhetoricize) @ Medium
 * [creative coding sketches](https://rfong.github.io/creative-coding)
 
+## blogring
+
+* [daiyi](https://daiyi.co/blog)
+* [coby](https://github.com/acobster)

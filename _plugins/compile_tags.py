@@ -1,12 +1,8 @@
 #!/usr/bin/env python
-
-'''
-This script generates tag pages for all your post tags for a Jekyll site.
-It is invoked from a plugin after post_write.
-Run it from the project root if testing.
-
-Current convention expected for tag names is r/[-\w\d]+/
-'''
+# This script generates tag pages for all your post tags for a Jekyll site.
+# It is invoked from a plugin after post_write.
+# Run it from the project root if testing.
+# Current convention expected for tag names is r/[-\w\d]+/
 
 import glob
 import itertools
